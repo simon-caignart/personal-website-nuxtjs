@@ -54,7 +54,7 @@
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
 
         <h2 class="text-2xl leading-7 font-semibold">
-          Vue-tel-input ☑️
+          vue-tel-input ☑️
         </h2>
 
         <vue-tel-input
@@ -76,6 +76,9 @@
         >
           <el-button>top-start</el-button>
         </el-tooltip>
+        <h2 class="text-2xl leading-7 font-semibold" data-aos="zoom-in" data-aos-delay=3000 >
+          aos ☑️
+        </h2>
 
       </div>
       <div class="flex justify-center pt-4 space-x-2">

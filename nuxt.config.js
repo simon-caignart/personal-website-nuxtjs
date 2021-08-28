@@ -20,13 +20,14 @@ export default {
   css: [
     '@/assets/css/tailwind.css',
     "@/node_modules/vue-tel-input/dist/vue-tel-input.css",
-    "@/node_modules/element-ui/lib/theme-chalk/index.css"
+    "@/node_modules/element-ui/lib/theme-chalk/index.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "@/plugins/vue-tel-input.js",
-    "@/plugins/element-ui"
+    "@/plugins/element-ui",
+    { src: "~/plugins/aos", ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
