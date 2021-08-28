@@ -1,0 +1,539 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This media quezy is used to scale down the home page on devices with 125% scale at system level */
+@media (-webkit-device-pixel-ratio: 1.25) {
+  .home {
+    zoom: 0.8;
+  }
+}
+
+/* Font */
+@layer base {
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 500;
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 600;
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
+  }
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Home View */
+
+.svg-shadow {
+  filter: drop-shadow(2px 4px 3px rgb(0 0 0 / 0.35));
+}
+.svg-shadow-little {
+  filter: drop-shadow(2px 2px 1.5px rgb(0 0 0 / 0.225));
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.fadelater-enter-active,
+.fadelater-leave-active {
+  transition-delay: 0.45s;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fadelater-enter,
+.fadelater-leave-active {
+  opacity: 0;
+}
+
+.home {
+  @apply absolute min-h-full w-full max-w-screen-3xl m-auto bg-white dark:bg-gray-800 flex flex-col content-center justify-center xl:flex-row;
+}
+
+.homeNameSection {
+  @apply w-3/4 xl:w-1/2 place-self-center cursor-default;
+}
+
+.homeName {
+  @apply select-none text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl text-center xl:pl-14 xl:text-left font-semibold text-black dark:text-gray-300;
+}
+
+.homeCardSection {
+  @apply grid grid-cols-1 mt-10 xl:mt-0 xl:ml-3 xl:mr-10 gap-3 w-3/4 place-self-center md:grid-cols-2 h-96 xl:grid-cols-2 xl:w-1/2;
+}
+
+.homeCard {
+  @apply min-w-0 p-4 rounded-lg transition duration-300 ease-in-out transform-gpu;
+}
+
+.homeCard:hover {
+  @apply shadow-xl scale-105;
+}
+
+.homeCard:focus {
+  @apply scale-100;
+}
+
+.homeCardText {
+  @apply mb-4 font-bold text-white dark:text-gray-800 text-3xl;
+}
+
+/* Skills View */
+
+.skillsRow {
+  @apply flex flex-col md:flex-row px-8 pt-4 pb-0;
+}
+
+.skillsInlineRow {
+  @apply flex-1 flex md:flex-row;
+}
+
+.skillCardTitle {
+  @apply text-3xl xl:text-4xl truncate font-medium;
+}
+
+.skillCardParagraph {
+  @apply text-xl;
+}
+
+.skillCard {
+  @apply flex-1 bg-white dark:bg-gray-800  dark:text-gray-300 rounded-xlg p-8 mb-0;
+}
+
+.twoLogosCard {
+  @apply bg-white dark:bg-gray-800 min-w-skillsBar rounded-xlg p-8 mb-0 mt-4 md:mt-0 grid grid-flow-col grid-cols-2 grid-rows-1 md:grid-cols-1 md:grid-rows-2 gap-4;
+}
+
+.twoLogosRowCard {
+  @apply flex flex-col xl:flex-row items-center bg-white dark:bg-gray-800 rounded-xlg p-8 mt-4;
+}
+
+.fourLogosCard {
+  @apply grid grid-flow-col grid-cols-2 grid-rows-2 gap-4 items-center bg-white dark:bg-gray-800 rounded-xlg p-8 my-4 md:my-0 md:ml-4;
+}
+
+.sixLogosCard {
+  @apply bg-white dark:bg-gray-800 rounded-xlg p-8 mt-4 md:mt-0 mb-4 md:mb-0 md:mx-4 grid grid-cols-2 grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 gap-4 items-center;
+}
+
+.skillLogo {
+  @apply self-center place-self-center transition duration-500;
+}
+
+.skillLogo:hover {
+  @apply transform scale-110;
+}
+
+.el-tooltip__popper {
+  @apply rounded-lg shadow-tooltip !important;
+}
+
+.el-tooltip__popper.is-dark {
+  @apply select-none bg-white text-black dark:bg-gray-800 dark:text-gray-300 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .el-tooltip__popper .popper__arrow::after {
+    border-bottom-color: white !important;
+    border-top-color: white !important;
+  }
+  .el-tooltip__popper .popper__arrow {
+    border-bottom-color: white !important;
+    border-top-color: white !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .el-tooltip__popper .popper__arrow::after {
+    border-bottom-color: #1f2937 !important;
+    border-top-color: #1f2937 !important;
+  }
+  .el-tooltip__popper .popper__arrow {
+    border-bottom-color: #1f2937 !important;
+    border-top-color: #1f2937 !important;
+  }
+}
+
+.el-collapse {
+  @apply border-0 !important;
+}
+
+.el-collapse-item__header {
+  @apply bg-white font-sans text-lg font-bold text-black dark:text-gray-300 dark:bg-gray-800 border-gray-200 border-b-2 dark:border-gray-700 !important;
+}
+
+.el-collapse-item__content {
+  @apply bg-white dark:bg-gray-800 py-4 !important;
+}
+
+.el-collapse-item__wrap {
+  @apply bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 !important;
+}
+
+.devModalRow {
+  @apply flex flex-row items-center py-1.5;
+}
+
+.devModalRowText {
+  @apply break-normal align-middle text-base text-black dark:text-gray-300 ml-3;
+}
+
+/* Contact View */
+
+.contactInput {
+  @apply block w-full rounded-lg p-3 mb-3 bg-white dark:bg-gray-800 dark:text-gray-300 border-gray-200 dark:border-gray-700 transition duration-300;
+}
+
+.contactInput:focus {
+  @apply outline-none shadow-2xl ease-in-out transform-gpu;
+}
+
+.contactInputLabel {
+  @apply uppercase text-white dark:text-gray-700 text-base font-bold mb-2;
+}
+
+.contactRow {
+  @apply flex flex-wrap -mx-3 mb-6;
+}
+
+.contactSubmitBtn {
+  @apply group inline-flex items-center justify-center px-4 py-3 leading-6 font-medium rounded-lg bg-white dark:bg-gray-800 transition duration-500;
+}
+
+.contactSubmitBtn:hover {
+  @apply shadow-expCardDarkMode ease-in-out;
+}
+
+.contactSubmitBtn:focus {
+  @apply outline-none shadow-expCardDarkMode;
+}
+
+.contactSubmitBtnSvg {
+  @apply -ml-1 mr-3 h-5 w-5 fill-current transition duration-300 ease-in-out;
+}
+
+.contactInfoText {
+  @apply text-center text-white dark:text-gray-800;
+}
+
+.contactInfoSocialIcon {
+  @apply inline w-8 h-8 fill-current text-white dark:text-gray-800 cursor-pointer transition transform-gpu;
+}
+
+.contactInfoSocialIcon:hover {
+  @apply text-purple-300 dark:text-purple-800 scale-110 duration-500 ease-in-out;
+}
+
+.vue-tel-input {
+  @apply transition transform-gpu rounded-lg bg-white outline-none dark:bg-gray-800 border-gray-200 dark:border-gray-700;
+}
+
+.vue-tel-input:focus {
+  @apply outline-none shadow-2xl duration-300 ease-in-out;
+}
+
+.vti__input {
+  @apply w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-0 outline-none rounded-lg p-3;
+}
+
+.vue-tel-input:focus-within {
+  @apply outline-none shadow-2xl border-gray-200 dark:border-gray-700;
+}
+
+.vti__dropdown {
+  @apply outline-none border-0;
+}
+
+.vti__dropdown.open {
+  @apply bg-white dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu;
+}
+.vti__dropdown:hover {
+  @apply bg-gray-200 dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu;
+}
+
+.vti__dropdown-list {
+  @apply bg-white dark:bg-gray-800  rounded-lg rounded-tl-none border-0 shadow-2xl p-0 m-0;
+  z-index: 1;
+  text-align: left;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  left: -1px;
+  width: 390px;
+}
+
+.vti__dropdown-item {
+  @apply text-gray-800 dark:text-gray-200;
+}
+
+.vti__dropdown-item.highlighted {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
+
+.vti__dropdown-list.below {
+  @apply top-11;
+}
+
+/* Experiences View */
+
+.expSectionTitle {
+  @apply text-4xl mb-10 text-white dark:text-gray-800 text-center font-bold;
+}
+
+.expSectionTitleProjects {
+  @apply text-4xl mb-10 text-black dark:text-gray-300 text-center font-bold;
+}
+
+.expCard {
+  @apply relative p-4 m-auto rounded-xl bg-white dark:bg-gray-800 shadow-xl w-10/12 max-w-expcard sm:w-expcard xl:h-56;
+}
+
+.expCardProjects {
+  @apply relative p-4 m-auto mb-12 rounded-xl bg-white dark:bg-gray-800 shadow-expCardDarkMode w-10/12 max-w-expcard sm:w-expcard xl:h-56;
+}
+
+.expCardTitle {
+  @apply font-bold text-xl dark:text-gray-300;
+}
+
+.expCardDates {
+  @apply text-lg dark:text-gray-300;
+}
+
+.expCardParagraph {
+  @apply w-full sm:w-3/4 dark:text-gray-300 place-self-center;
+}
+
+.expCardInlineRow {
+  @apply flex flex-col sm:flex-row pb-0 sm:pb-7 pt-4 sm:pt-0 xl:pb-0;
+}
+
+.expCardImage {
+  @apply w-1/3 sm:w-1/4 p-3 place-self-center inline-flex justify-center;
+}
+
+.expCardLink {
+  @apply no-underline cursor-pointer text-indigo-400 absolute bottom-4 left-4;
+}
+
+.expCardLink:hover {
+  @apply underline;
+}
+
+.el-dialog {
+  @apply transform -translate-x-1/2 -translate-y-1/2 absolute m-0 top-1/2 left-1/2 rounded-xl flex flex-col bg-white dark:bg-gray-800 w-11/12 xl:w-9/12 max-h-90 py-3.5 !important;
+}
+
+.el-dialog .el-dialog__body {
+  @apply overflow-auto !important;
+}
+
+.bigExpCardTitle {
+  @apply break-normal text-3xl md:text-4xl text-black dark:text-gray-300 font-bold text-center xl:text-left xl:pl-10;
+}
+
+.bigExpCardDates {
+  @apply break-normal text-xl md:text-2xl text-black dark:text-gray-300 text-center mt-2 xl:text-left xl:pl-10;
+}
+
+.bigExpCardFlexBox {
+  @apply flex flex-col-reverse xl:flex-row xl:h-full xl:px-10;
+}
+
+.bigExpCardTextSection {
+  @apply w-full xl:w-2/3;
+}
+
+.bigExpCardParagraph {
+  @apply break-normal text-black dark:text-gray-300 text-lg md:text-xl mt-5 px-5 xl:pl-0 xl:mr-10;
+}
+
+.bigExpCardSubTitle {
+  @apply break-normal text-2xl md:text-3xl text-black dark:text-gray-300 font-bold mt-5 text-center xl:text-left;
+}
+
+.bigExpCardLogoSection {
+  @apply place-self-center flex flex-col w-full xl:w-1/3;
+}
+
+.bigExpCardLogo {
+  @apply flex-1 self-center place-self-center w-1/3 max-w-xxs mt-5 xl:mt-0;
+}
+
+.bigExpCardMap {
+  @apply self-center place-self-center p-4 pt-7 xl:p-3 xl:pt-3 xl:pl-4 xl:mt-10 w-full max-w-xl rounded-xlg;
+}
+
+.bigExpIntegration {
+  @apply flex-1 self-center place-self-center p-3 xl:p-0 w-full rounded-lg max-w-md xl:max-w-none xl:transform xl:-translate-y-12;
+}
+
+/* About View */
+
+.aboutTextSection {
+  @apply h-5/6 xl:w-1/2 place-self-center xl:pl-36 xl:transform xl:-translate-y-8;
+}
+
+.aboutTitle {
+  @apply text-white dark:text-gray-800 font-bold text-center xl:text-left text-3xl sm:text-4xl xl:text-5xl;
+}
+.aboutParagraph {
+  @apply overflow-ellipsis p-5 sm:px-24 md:px-36 xl:px-0 text-white dark:text-gray-800 text-center xl:text-left text-lg sm:text-xl xl:text-2xl;
+}
+
+.aboutWindow {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-9/12 sm:w-7/12 md:w-5/12 h-4/6 rounded-xl bg-white dark:bg-gray-800;
+}
+
+.aboutWindowDot {
+  @apply hidden sm:block absolute top-4 bg-gray-300 dark:bg-gray-700 rounded-full w-3 h-3 xl:w-4 xl:h-4;
+}
+
+.aboutBlob {
+  @apply w-full h-full max-h-96;
+}
+
+.aboutIllustrationSection {
+  @apply relative mt-20 mb-3 w-full max-h-96 xl:w-1/2 xl:h-1/2 xl:hidden;
+}
+
+.aboutSection {
+  @apply flex flex-col min-h-screen xl:flex-row;
+}
+
+.hobbiesImgContainer {
+  transform: translate(-50%, -50%);
+}
+
+.hobbiesImgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.hobbiesImgContainer img.top {
+  position: relative;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: 0;
+
+  animation-name: scaleUpThenDown;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+.hobbiesImgContainer img.bottom {
+  animation-name: scaleDownThenUp;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+@keyframes scaleUpThenDown {
+  10%,
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -webkit-transform-origin: top right;
+    -moz-transform: scale(1, 1);
+    -moz-transform-origin: top right;
+    -o-transform: scale(1, 1);
+    -o-transform-origin: top right;
+    transform: scale(1, 1);
+    transform-origin: top right;
+  }
+  60%,
+  100% {
+    -webkit-transform: scale(0, 0);
+    -webkit-transform-origin: bottom left;
+    -moz-transform: scale(0, 0);
+    -moz-transform-origin: bottom left;
+    -o-transform: scale(0, 0);
+    -o-transform-origin: bottom left;
+    transform: scale(0, 0);
+    transform-origin: bottom left;
+  }
+}
+
+@keyframes scaleDownThenUp {
+  10%,
+  50% {
+    -webkit-transform: scale(0, 0);
+    -webkit-transform-origin: bottom left;
+    -moz-transform: scale(0, 0);
+    -moz-transform-origin: bottom left;
+    -o-transform: scale(0, 0);
+    -o-transform-origin: bottom left;
+    transform: scale(0, 0);
+    transform-origin: bottom left;
+  }
+  60%,
+  100% {
+    -webkit-transform: scale(1, 1);
+    -webkit-transform-origin: bottom left;
+    -moz-transform: scale(1, 1);
+    -moz-transform-origin: bottom left;
+    -o-transform: scale(1, 1);
+    -o-transform-origin: bottom left;
+    transform: scale(1, 1);
+    transform-origin: bottom left;
+  }
+}
+
+/* ScrollBar Styling */
+
+::-webkit-scrollbar {
+  @apply rounded-lg;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent dark:bg-gray-800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: solid;
+  @apply bg-gray-300 dark:bg-gray-700 rounded-lg border-r-4 border-l-4 border-white dark:border-gray-800;
+}
+
+/* Handle on Hover*/
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
