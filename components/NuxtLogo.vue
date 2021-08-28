@@ -8,14 +8,3 @@
         ></vue-tel-input>
       </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      phone: ""
-    };
-  }
-};
-
-</script>
