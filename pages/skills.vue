@@ -25,10 +25,14 @@ export default {
         "Development of all kinds of software as well as websites. I am passionate about building excellent software that improves the lives of those around me",
     };
   },
-  metaInfo() {
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     return {
       title: this.metaTitle,
-      link: [{ rel: "canonical", href: "https://simoncaignart.com/skills" }],
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      link: [{ rel: "canonical", href: "https://simoncaignart.com/skills" },...i18nHead.link],
       meta: [
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
@@ -78,6 +82,7 @@ export default {
           property: "twitter:image:alt",
           content: this.metaTitle,
         },
+        ...i18nHead.meta
       ],
     };
   },

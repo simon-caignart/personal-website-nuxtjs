@@ -1,4 +1,3 @@
-
 export const state = () => ({
   theme: {}
 });
@@ -26,6 +25,7 @@ export const actions = {
   },
   // This simply flips whatever was most recently committed to storage.
   flipTheme({ commit }) {
+
     switch (localStorage.theme) {
       case "light":
         commit("SET_THEME", "dark");

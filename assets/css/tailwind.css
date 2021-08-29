@@ -2,73 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* This media quezy is used to scale down the home page on devices with 125% scale at system level */
-@media (-webkit-device-pixel-ratio: 1.25) {
-  .home {
-    zoom: 0.8;
-  }
-}
-
-/* Font */
-@layer base {
-  @font-face {
-    font-family: Montserrat;
-    font-weight: 400;
-    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
-  }
-  @font-face {
-    font-family: Montserrat;
-    font-weight: 500;
-    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
-  }
-  @font-face {
-    font-family: Montserrat;
-    font-weight: 600;
-    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
-  }
-  @font-face {
-    font-family: Montserrat;
-    font-weight: 700;
-    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
-  }
-}
-
-* {
-  font-family: Montserrat, sans-serif;
-  scroll-behavior: smooth;
-}
 
 /* Home View */
 
-.svg-shadow {
-  filter: drop-shadow(2px 4px 3px rgb(0 0 0 / 0.35));
-}
-.svg-shadow-little {
-  filter: drop-shadow(2px 2px 1.5px rgb(0 0 0 / 0.225));
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-.fadelater-enter-active,
-.fadelater-leave-active {
-  transition-delay: 0.45s;
-  transition-duration: 0.4s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
-
-.fadelater-enter,
-.fadelater-leave-active {
-  opacity: 0;
-}
-
 .home {
-  @apply absolute min-h-full w-full max-w-screen-3xl m-auto bg-white dark:bg-gray-800 flex flex-col content-center justify-center xl:flex-row;
+  @apply min-h-screen w-full max-w-screen-3xl bg-white dark:bg-gray-800 flex flex-col items-center justify-center  xl:flex-row overflow-hidden;
 }
 
 .homeNameSection {
@@ -246,34 +184,37 @@
 }
 
 .vue-tel-input {
-  @apply transition transform-gpu rounded-lg bg-white outline-none dark:bg-gray-800 border-gray-200 dark:border-gray-700;
+  @apply transition transform-gpu rounded-lg bg-white outline-none dark:bg-gray-800 border-gray-200 dark:border-gray-700 !important;
 }
 
 .vue-tel-input:focus {
-  @apply outline-none shadow-2xl duration-300 ease-in-out;
+  @apply outline-none shadow-2xl duration-300 ease-in-out !important;
 }
 
 .vti__input {
-  @apply w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-0 outline-none rounded-lg p-3;
+  @apply w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-0 outline-none rounded-lg p-3 !important;
 }
 
 .vue-tel-input:focus-within {
-  @apply outline-none shadow-2xl border-gray-200 dark:border-gray-700;
+  @apply outline-none shadow-2xl border-gray-200 dark:border-gray-700 !important;
 }
 
 .vti__dropdown {
-  @apply outline-none border-0;
+  @apply outline-none border-0 !important;
 }
 
 .vti__dropdown.open {
-  @apply bg-white dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu;
+  @apply bg-white dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu !important;
 }
 .vti__dropdown:hover {
-  @apply bg-gray-200 dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu;
+  @apply bg-gray-200 dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu !important;
+}
+.vti__dropdown:focus {
+  @apply bg-gray-200 dark:bg-gray-700 rounded-lg outline-none transition duration-300 ease-in-out transform-gpu !important;
 }
 
 .vti__dropdown-list {
-  @apply bg-white dark:bg-gray-800  rounded-lg rounded-tl-none border-0 shadow-2xl p-0 m-0;
+  @apply bg-white dark:bg-gray-800  rounded-lg rounded-tl-none border-0 shadow-2xl p-0 m-0  !important;
   z-index: 1;
   text-align: left;
   list-style: none;
@@ -285,15 +226,15 @@
 }
 
 .vti__dropdown-item {
-  @apply text-gray-800 dark:text-gray-200;
+  @apply text-gray-800 dark:text-gray-200  !important;
 }
 
 .vti__dropdown-item.highlighted {
-  @apply bg-gray-200 dark:bg-gray-700;
+  @apply bg-gray-200 dark:bg-gray-700 !important;
 }
 
 .vti__dropdown-list.below {
-  @apply top-11;
+  @apply top-11  !important;
 }
 
 /* Experiences View */

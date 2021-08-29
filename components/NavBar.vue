@@ -5,7 +5,6 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="place-self-center min-w-navBarArrow h-7 w-7 md:h-10 md:w-10 fill-current text-white dark:text-gray-800 cursor-pointer left-5 top-5"
-      @click="backHome"
       viewBox="0 0 492 492"
     >
       <path
@@ -13,7 +12,6 @@
       />
     </svg>
     </nuxt-link>
-
 
     <!-- Title of the page -->
     <h1
@@ -31,11 +29,6 @@ export default {
       type: String,
       required: true,
       default: "Default Title",
-    },
-  },
-  methods: {
-    backHome() {
-      this.$router.push({ name: "Software Engineer Student" });
     },
   },
 };

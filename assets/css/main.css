@@ -1,3 +1,4 @@
+/* Pages transition */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.23s;
@@ -5,4 +6,71 @@
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+
+/* Used for animations */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.fadelater-enter-active,
+.fadelater-leave-active {
+  transition-delay: 0.45s;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fadelater-enter,
+.fadelater-leave-active {
+  opacity: 0;
+}
+
+/* Style for the svgs */
+
+.svg-shadow {
+  filter: drop-shadow(2px 4px 3px rgb(0 0 0 / 0.35));
+}
+.svg-shadow-little {
+  filter: drop-shadow(2px 2px 1.5px rgb(0 0 0 / 0.225));
+}
+
+
+/* This media quezy is used to scale down the home page on devices with 125% scale at system level */
+@media (-webkit-device-pixel-ratio: 1.25) {
+  .home {
+    zoom: 0.8;
+  }
+}
+
+/* Font */
+@layer base {
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 500;
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 600;
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.woff2) format("woff2");
+  }
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
 }

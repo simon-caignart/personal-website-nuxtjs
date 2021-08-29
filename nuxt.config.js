@@ -1,10 +1,15 @@
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Simon Caignart | Software Engineer Student",
     htmlAttrs: {
-      lang: "en"
+      lang: "en-US",
     },
+    link: [
+      { rel: "shortcut icon", href: "https://simoncaignart.com/favicon.ico" },
+      { rel: "icon", href: "https://simoncaignart.com/favicon.ico" },
+      { rel: "apple-touch-icon", href: "https://simoncaignart.com/favicon.ico" },
+    ],
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -16,10 +21,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~/node_modules/vue-tel-input/dist/vue-tel-input.css",
+    "~/node_modules/element-ui/lib/theme-chalk/index.css",
     "~/assets/css/main.css",
-    "@/assets/css/tailwind.css",
-    "@/node_modules/vue-tel-input/dist/vue-tel-input.css",
-    "@/node_modules/element-ui/lib/theme-chalk/index.css"
+    "~/assets/css/tailwind.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

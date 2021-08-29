@@ -156,6 +156,7 @@
   },
   "notFound": {
     "sorry": "Sorry, this page does not exist... 😕",
+    "error": "An error occured : ",
     "goBack": "Go back to home page"
   }
 }

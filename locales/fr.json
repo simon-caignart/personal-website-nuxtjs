@@ -157,6 +157,7 @@
   },
   "notFound": {
     "sorry": "Désolé, cette page n'existe pas... 😕",
+    "error": "Une erreur est survenue : ",
     "goBack": "Retourner à la page d'accueil"
   }
 }
