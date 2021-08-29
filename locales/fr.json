@@ -1,0 +1,162 @@
+{
+  "home": {
+    "skills": "Compétences",
+    "experiences": "Expériences",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "skills": {
+    "development": {
+      "clickHere": "Cliquez ici pour plus de détails",
+      "title": "Développement",
+      "softwareEngineer": "Ingénieur logiciel",
+      "text1": "Développement de tous types de logiciels ainsi que de sites webs.",
+      "text2": "Je suis passionné par la création d'excellents logiciels qui améliorent la vie de ceux qui m'entourent, développant à partir de zéro et la concrétisation d'idées."
+    },
+    "databases": {
+      "title": "Bases de données",
+      "text": "Gestion de bases de données SQL et NoSQL."
+    },
+    "containerization": {
+      "title": "Conteneurisation",
+      "text1": "Conteneurisation d'applications avec docker et docker compose.",
+      "text2": "Je peux également créer, configurer et gérer un système Kubernetes, depuis la création du cluster jusqu'à la configuration de l'ingress."
+    },
+    "network": {
+      "title": "Réseau",
+      "text1": "Je peux configurer un réseau et le sécuriser avec un proxy, un VPN, un pare-feu, une zone démilitarisée, etc.",
+      "text2": "Je peux également configurer un service Active Directory et le gérer."
+    },
+    "adobe": {
+      "title": "Adobe",
+      "text": "Je possède un niveau intermédiaire sur Photoshop, Premiere Pro, InDesign et XD."
+    },
+    "office": {
+      "title": "Office",
+      "text": "J'utilise la suite Office tous les jours pour mes études, c'est pourquoi je maîtrise les principales applications, Word, PowerPoint, Excel, Visio."
+    },
+    "modal": {
+      "programmingLanguages": "Langages de programmation",
+      "UIFrameworks": "Frameworks UI",
+      "webDevelopment": "Développement web",
+      "developmentTools": "Outils de développement",
+      "c#": "C#. J'ai réalisé un projet scolaire en C#, je l'ai également utilisé avec ASP.NET pour créer des API. Enfin, j'ai travaillé en tant que freelance sur du C#.",
+      "java": "Java. J'ai réalisé un projet complet en Java pendant un stage de quatre mois.",
+      "c": "Langage C. Je l'ai utilisé pour faire des petits programmes lorsque j'ai découvert la programmation.",
+      "python": "Python. J'ai travaillé avec Python principalement pour produire des algorithmes heuristiques et méta-heuristiques afin de résoudre certains problèmes NP-Difficile, comme le VRP.",
+      "arduino": "Arduino. Je l'ai beaucoup utilisé à l'école pour deux projets mélant programmation et robotique.",
+      "swift": "Swift. Je l'ai découvert en développant une application IOS.",
+      "javafx": "JavaFx. je l'ai utilisé pour un projet complet lors d'un stage de quatre mois.",
+      "wpf": "WPF. Je l'ai utilisé WPF lors d'un projet scolaire pour créer un gestionnaire de sauvegarde de fichiers.",
+      "html": "HTML. Je l'ai utilisé dans divers projets web.",
+      "css": "CSS. Je l'ai utilisé dans divers projets web.",
+      "js": "Javascript. Je l'ai utilisé dans divers projets web.",
+      "vuejs": "Vue.Js. J'ai développé ce site web en utilisant ce framework Javascript.",
+      "angular": "Angular. J'ai créé un site web pour le back-office d'une application orientée microservices.",
+      "laravel": "Laravel. J'ai utilisé ce framework lors d'un projet scolaire consistant en la création d'un site web avec gestion des utilisateurs et d'une boutique en ligne.",
+      "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement.",
+      "vscode": "Visual Studio Code. C'est mon IDE principal, je l'utilise essentiellement pour les projets web.",
+      "vs": "Visual Studio. L'IDE avec lequel je choisis de travailler lorsqu'il s'agit de développement C#, ASP.NET, WPF.",
+      "intellij": "Intellij. L'IDE que je choisis pour travailler avec Java et JavaFx."
+    }
+  },
+  "experiences": {
+    "moreInfo": "Plus d'informations...",
+    "techUsed": "Technologies utilisées",
+    "formations": {
+      "title": "Formations",
+      "cesi": {
+        "title": "CESI",
+        "dates": "2018 → 2023",
+        "text_before": "Diplôme d'ingénieur spécialité informatique.",
+        "text_after": "Je suis actuellement en 4ème année."
+      },
+      "merleau": {
+        "title": "Lycée Merleau Ponty",
+        "dates": "2015 → 2018",
+        "text": "Baccalauréat scientifique, option SVT, avec mention."
+      }
+    },
+    "internships": {
+      "title": "Stages",
+      "eixa6": {
+        "title": "Eixa6 Informatique",
+        "dates": "Janvier → Avril 2021",
+        "detailedDates":"4 Janvier → 16 Avril 2021",
+        "text": "Création d'une application orientée microservices, destinée à la gestion des missions et des clients de l'entreprise.",
+        "detailedText":"Durant ce stage qui a duré 4 mois, j'ai développé une application orientée microservices permettant la gestion des missions et des clients de l'entreprise. Les différents services de l'application étaient hébergés sur un cluster de quatre Raspberry Pi 4, chacun exécutant Kubernetes. Tous ces services étaient des APIs Web ASP.NET, utilisant des bases de données MongoDB. Pour le front-end, le client de bureau a été réalisé avec JavaFx, et l'application web du back-office avec Angular. La sécurité de cette application a été gérée avec des tokens JWT et un service d'authentification."
+      },
+      "cgr": {
+        "title": "CGR Cinémas",
+        "dates": "Mars → Juillet 2020",
+        "detailedDates":"30 Mars → 31 Juillet 2020",
+        "text": "Développement d'un nouveau logiciel interne permettant de gérer tous les écrans des cinémas (Acceuil, Extérieur, Entrée etc).",
+        "detailedText": "Ce stage, qui a duré 10 semaines, a été effectué au siège de la société CGR Cinémas, situé à Périgny. Depuis plusieurs années, le groupe CGR Cinémas dispose d'une équipe de programmeurs chargée du développement et de la maintenance d'une suite logicielle, utilisée dans les cinémas et au siège. Cette suite comprend un logiciel d'affichage et de gestion ( dans les cinémas et au siège ). Ce stage s'inscrivait dans le cadre des travaux régulièrement mis en œuvre pour améliorer l'existant et faciliter le travail des utilisateurs finaux. Mon travail a donc consisté en la refonte du logiciel de gestion d'affichage, qui s'appelle désormais \"EasyCiné Display\". Ma production est maintenant utilisé dans chacun des 71 cinémas du groupe, on peut le voir en action sur les écrans des halls d'entrée, des entrées en salle, des extérieurs, etc."
+      }
+    },
+    "schoolProjects": {
+      "title":"Projets d'école",
+      "autonomousCar": {
+        "title": "Prototype d'une voiture autonome",
+        "dates": "Juin 2019",
+        "text": "Création d'un prototype de voiture autonome (échelle 1:18) capable de se déplacer dans une ville et de rechercher les places de stationnement disponibles.",
+        "detailedText1": "L'objectif de ce projet était de créer un prototype de voiture autonome capable de se déplacer dans une ville et de rechercher des places de parking disponibles. Le composant principal était un arduino, contrôlant tout, des moteurs aux capteurs. Nous avons également créé une interface avec Java et Swing pour afficher la position de la voiture et les places de parking disponibles en temps réel. La voiture communiquait sa position à l'ordinateur via un émetteur radio.",
+        "detailedText2":"Le chemin parcouru par la voiture a été calculé grâce à l'algorithme de ",
+        "dijkstra": "Dijkstra",
+        "detailedText3":". En effet, ce dernier permet de trouver le chemin le plus court. Les rues de la ville étaient représentées par des lignes noires et la voiture pouvait les suivre grâce à un capteur noir et blanc."
+      },
+      "studentAssociationWebsite": {
+        "clickMe":"Cliquez ici pour voir quelques captures d'écran du projet",
+        "title": "Site web pour l'association étudiante",
+        "dates": "2 semaines - Novembre 2019",
+        "text": "Conception d'un site web avec une gestion des utilisateurs, des événements, et une boutique en ligne, pour l'association étudiantes de l'école.",
+        "detailedText_before": "L'objectif de ce projet d'école était de créer un site internet pour l'association étudiante (BDE), permettant la gestion d'événements et une boutique en ligne. Ce site devait également proposer un système de gestion des utilisateurs, avec des rôles, afin que seules certaines personnes puissent modifier, supprimer et créer des événements, ajouter des produits, etc.",
+        "detailedText_after": "Nous avons développé ce site web en utilisant le framework PHP Laravel. Pour la base de données, nous avons utilisé MySQL."
+      
+      }
+    },
+    "personalProjects": {
+      "title": "Projets personnels",
+      "personalWebsite": {
+        "title": "Mon site web personnel",
+        "dates": "Avril → Mai 2021",
+        "text": "J'ai développé mon site web personnel. Pour cela, j'ai utilisé Vue.JS et Tailwind CSS, ainsi qu'Adobe XD pour le design."
+      },
+      "confidentialProject": {
+        "title": "Projet confidentiel",
+        "dates": "Mars 2021 → ...",
+        "text": "Je travaille actuellement sur un projet ambitieux avec 4 autres personnes."
+      }
+    }
+  },
+  "about": {
+    "hi": "Salut, ",
+    "imSimonCaignart": "Moi c'est Simon Caignart",
+    "presentation_before": "Je suis un étudiant de ",
+    "presentation_after": " ans passionné par les nouvelles technologies et le développement, actuellement en 4ème année d’école d’ingénieurs en informatique. J'ai grandi en Charente-Maritime, qui est le département où je réside actuellement. Je suis une personne très curieuse qui aime apprendre de nouvelles choses et les partager avec le monde.",
+    "myHobbies": "Mes passe-temps",
+    "hobbies_presentation_before": "J'ai de nombreux passe-temps, car je déteste ne rien faire pendant mon temps libre. Le principal est le sport, j'en fais presque tous les jours, principalement de la musculation au poids du corps, également appelée ",
+    "hobbies_presentation_after": ". J'aime aussi passer du temps à faire de la mécanique. Une autre chose que j'adore est la science, en particulier l'espace, comprendre les théories et les secrets de cette chose fascinante est quelque chose qui me passionne vraiment."
+  },
+  "contact": {
+    "dontFill": "Ne remplissez pas ce formulaire si vous êtes humain :",
+    "workWithMe": "Vous souhaitez travailler avec moi ? Génial !",
+    "contactMe": "Vous pouvez me contacter facilement avec le formulaire situé juste ",
+    "here": "ici",
+    "myLinks": "Mes réseaux :",
+    "goToLinkedin": "Se rendre sur le profil linkedin de Simon Caignart",
+    "goToGithub": "Se rendre sur le profil Github de Simon Caignart",
+    "name": "PRÉNOM",
+    "lastName": "NOM",
+    "email": "EMAIL *",
+    "phoneNumber": "NUMÉRO DE TÉLÉPHONE",
+    "message": "MESSAGE *",
+    "sendIt": "Envoyer !",
+    "thankYou":"Merci pour votre message ! 😁",
+    "goBack": "Retour en arrière"
+  },
+  "notFound": {
+    "sorry": "Désolé, cette page n'existe pas... 😕",
+    "goBack": "Retourner à la page d'accueil"
+  }
+}

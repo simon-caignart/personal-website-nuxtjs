@@ -1,0 +1,161 @@
+{
+  "home": {
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "skills": {
+    "development": {
+      "clickHere": "Click here for more details",
+      "title": "Development",
+      "softwareEngineer": "Software engineer",
+      "text1": "Development of all kinds of software as well as websites.",
+      "text2": "I am passionate about building excellent software that improves the lives of those around me, coding things from scratch, and bringing ideas to life."
+    },
+    "databases": {
+      "title": "Databases",
+      "text": "SQL and NoSQL database management."
+    },
+    "containerization": {
+      "title": "Containerization",
+      "text1": "Application containerization with docker and docker compose.",
+      "text2": "I can also create, configure and manage a Kubernetes system, from the cluster creation all the way to the ingress configuration."
+    },
+    "network": {
+      "title": "Network",
+      "text1": "I can set up a network and secure it with a proxy, VPN, firewall, demilitarized zone, etc.",
+      "text2": "I can also configure an Active Directory service and manage it."
+    },
+    "adobe": {
+      "title": "Adobe",
+      "text": "I have an intermediate level in Photoshop, Premiere Pro, InDesign and XD."
+    },
+    "office": {
+      "title": "Office",
+      "text": "I use the microsoft office suite everyday for my school work, that's why I master the main applications, Word, PowerPoint, Excel, Visio."
+    },
+    "modal": {
+      "programmingLanguages": "Programming languages",
+      "UIFrameworks": "UI Frameworks",
+      "webDevelopment": "Web Development",
+      "developmentTools": "Development tools",
+      "c#": "C#. Did a school project using C# and used it with ASP.NET to create APIs for an internship. Also Worked as a Freelancer with it. I'm pretty familiar with it.",
+      "java": "Java. I did a complete project during an internship of four months using it.",
+      "c": "Language C. Did some basic development at the beginning of my coding journey with it.",
+      "python": "Python. Worked with Python mainly to produce heuristic and meta-heuristic algorithms in order to solve some NP-Hard problems, like the VRP.",
+      "arduino": "Arduino. Used it a lot at school for two projects.",
+      "swift": "Swift. Actually discovering it while developing an IOS app.",
+      "javafx": "JavaFx. Used it for a complete project during an internship of four months.",
+      "wpf": "WPF. Used WPF during a school project to create a file backup manager.",
+      "html": "HTML. Used it in various web projects.",
+      "css": "CSS. Used it in various web projects.",
+      "js": "Javascript. Used it in various web projects.",
+      "vuejs": "Vue.Js. Constructed this website using this Javascript Framework.",
+      "angular": "Angular. Created a back-office website for a microservices oriented application.",
+      "laravel": "Laravel. Used this framework during a school project for the development of a website with user managment and an online store.",
+      "tailwind": "Tailwind CSS. I used this CSS framework for the development of the website you are actually seeing.",
+      "vscode": "Visual Studio Code. That's my main tool for developing, I mainly use it on web projects.",
+      "vs": "Visual Studio. The IDE I choose to work with when dealing with C#, ASP.NET, WPF development.",
+      "intellij": "Intellij. My go to when dealing with Java and JavaFx."
+    }
+  },
+  "experiences": {
+    "moreInfo": "More info...",
+    "techUsed": "Technologies used",
+    "formations": {
+      "title": "Formations",
+      "cesi": {
+        "title": "CESI",
+        "dates": "2018 → 2023",
+        "text_before": "Master's degree in Enginnering IT and Computer Science,",
+        "text_after": "I am currently in my fourth of five years."
+      },
+      "merleau": {
+        "title": "Merleau Ponty High School",
+        "dates": "2015 → 2018",
+        "text": "High School diploma, scientific option, equivalent to A Levels (with honours)."
+      }
+    },
+    "internships": {
+      "title": "Internships",
+      "eixa6": {
+        "title": "Eixa6 Informatique",
+        "dates": "January → April 2021",
+        "detailedDates":"January 4 → April 16 2021",
+        "text": "Constructed a microservices oriented application, made for the management of the missions and clients of the company.",
+        "detailedText":"During this internship that lasted 4 month, I constructed a microservice-oriented application made for the management of the missions and clients of the company. The different services of the application were hosted on a cluster of four raspberry pi 4, each one running kubernetes. All those services were ASP.NET Web Apis, using mongodb databases. For the front-end, the desktop client was made with JavaFx, and the back Office web app with Angular. The security of this application was managed with JWT Tokens and an authentication service."
+      },
+      "cgr": {
+        "title": "CGR Cinémas",
+        "dates": "March → July 2020",
+        "detailedDates":"Mars 30 → July 31 2020",
+        "text": "Developed a new internal software allowing to manage all the screens of the movie theaters (Lobby, Exterior, Entrance etc).",
+        "detailedText": "This internship, that lasted 10 weeks, was done at the headquarters of the company CGR Cinémas, located in Périgny. For several years, the CGR Cinemas group has had a team of programmers responsible for the development and maintenance of a software suite, used in cinemas and at the headquarters. This suite includes a display and management software (in cinemas and at headquarters). This internship was part of the work regularly implemented to improve the existing and facilitate the work of end users. This internship focused on the display management software used in cinemas, my work therefore consisted of carrying out a project to overhaul the display management software, which is now called \"EasyCiné Display\". This software is now used in every of the 71 movie theaters of the group, and can be seen in action on the screens of the lobbies, entrances, exteriors, etc."
+      }
+    },
+    "schoolProjects": {
+      "title":"School Projects",
+      "autonomousCar": {
+        "title": "Prototype of an autonomous car",
+        "dates": "June 2019",
+        "text": "Created a prototype of an autonomous car (1:18 scale) capable of moving around a city and searching for available parking places.",
+        "detailedText1": "The goal of this project was to create a prototype of an autonomous car capable of moving around a city and searching for available parking spots. The main component was an arduino, controlling everything, from the motors to the sensors. We also created an interface with Java and Swing to display the car's position and available parking spots in real time. The car was communicating its location to the computer via a radio transmitter.",
+        "detailedText2":"The way taken by the car was calculated thanks to the ",
+        "dijkstra": "Dijkstra algorithm",
+        "detailedText3":". Indeed, the latter makes it possible to find the shortest path. The streets of the city were represented by black lines and the car could follow them with a black and white sensor."
+      },
+      "studentAssociationWebsite": {
+        "clickMe":"Click here to see some screenshots of the project",
+        "title": "Student Association Website",
+        "dates": "2 weeks - November 2019",
+        "text": "Designed a website with user and event management, as well as an online store, for the school's student association.",
+        "detailedText_before": "The goal of this school project was to create a website for the student association of our school, allowing the management of events and an online store. This website also had to offer a user management system, with roles, so that only certain people could edit, remove, create events, add products, etc.",
+        "detailedText_after": "We developed this website using the open-source PHP web framework called Laravel. For the database, we used MySQL."
+      }
+    },
+    "personalProjects": {
+      "title": "Personal Projects",
+      "personalWebsite": {
+        "title": "My personal website",
+        "dates": "Avril → May 2021",
+        "text": "Developed my portfolio website. I used Vue.JS and Tailwind CSS, as well as Adobe XD for the design creation."
+      },
+      "confidentialProject": {
+        "title": "Confidential Project",
+        "dates": "Mars 2021 → ...",
+        "text": "Currently working on an ambitious top secret project with 4 other people."
+      }
+    }
+  },
+  "about": {
+    "hi": "Hi,",
+    "imSimonCaignart": "I'm Simon Caignart",
+    "presentation_before": "I am a ",
+    "presentation_after": " years old student passionate about all sort of new technologies and IT stuff, currently in my 4th year of master's degree in IT and Computer Science. I grew up in Charente-Maritime, which is the department where I currently reside. I am a very curious person who loves to learn new things and share it with people.",
+    "myHobbies": "My hobbies",
+    "hobbies_presentation_before": "I have many hobbies, because I hate doing nothing in my free time. The main one is doing sport, I do sport on a daily basis, mainly body weight training, also called as ",
+    "hobbies_presentation_after": ". I also enjoy spending time on cars and motorcycles, doing some mechanic... Another thing I'm really into is science, especially space, understanding the theories and secrets of this fascinating thing is something I'm really keen to."
+  },
+  "contact": {
+    "dontFill": "Don’t fill this out if you’re human: ",
+    "workWithMe": "Would you like to work with me? Awesome!",
+    "contactMe": "You can contact me easily with the form right ",
+    "here": "here",
+    "myLinks": "My links:",
+    "goToLinkedin": "Go to Simon Caignart's linkedin profile",
+    "goToGithub": "Go to Simon Caignart's GitHub profile",
+    "name": "NAME",
+    "lastName": "LAST NAME",
+    "email": "EMAIL *",
+    "phoneNumber": "PHONE NUMBER",
+    "message": "MESSAGE *",
+    "sendIt": "Send it!",
+    "thankYou":"Thank you for your message! 😁",
+    "goBack": "Go back"
+  },
+  "notFound": {
+    "sorry": "Sorry, this page does not exist... 😕",
+    "goBack": "Go back to home page"
+  }
+}

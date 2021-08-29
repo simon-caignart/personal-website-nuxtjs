@@ -80,8 +80,12 @@
           aos ☑️
         </h2>
 
-        <h2 class="mt-5 text-2xl leading-7 font-semibold" data-aos="zoom-out" >
+        <h2 class="mt-5 text-2xl leading-7 font-semibold" >
           metatags : {{this.title}} ☑️
+        </h2>
+
+        <h2 class="mt-5 text-2xl leading-7 font-semibold">
+          i18n : {{ $t('home.skills') }} ☑️
         </h2>
 
       </div>

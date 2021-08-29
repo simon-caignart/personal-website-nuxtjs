@@ -2,6 +2,8 @@
   <Tutorial/>
 </template>
 
-<script>
-export default {}
-</script>
+export default {
+  head () {
+    return this.$nuxtI18nHead({ addSeoAttributes: true })
+  }
+}
