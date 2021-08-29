@@ -197,7 +197,7 @@ export default {
         body: new URLSearchParams(this.createFormDataObj(data)).toString(),
       })
         // This is how we route to /contact/success on successful form submission
-        .then(() => this.$router.push({path: this.localePath('contact/success'), query: {q: this.q}}))
+        .then(() => this.$router.push("/success"))
         .catch((error) => alert(error));
     },
   },
