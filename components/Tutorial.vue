@@ -64,7 +64,7 @@
           v-model="phone"
         ></vue-tel-input>
 
-        <h2 class="text-2xl leading-7 font-semibold">
+        <h2 class="mt-5 text-2xl leading-7 font-semibold">
           element-ui ☑️
         </h2>
 
@@ -76,8 +76,12 @@
         >
           <el-button>top-start</el-button>
         </el-tooltip>
-        <h2 class="text-2xl leading-7 font-semibold" data-aos="zoom-in" data-aos-delay=3000 >
+        <h2 class="mt-5 text-2xl leading-7 font-semibold" data-aos="zoom-in" data-aos-delay=3000 >
           aos ☑️
+        </h2>
+
+        <h2 class="mt-5 text-2xl leading-7 font-semibold" data-aos="zoom-out" >
+          metatags : {{this.title}} ☑️
         </h2>
 
       </div>
@@ -122,11 +126,24 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      phone: ""
-    };
+  export default {
+    data() {
+      return {
+        title: 'Home page',
+              phone: ""
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'Homedescription',
+            name: 'description',
+            content: 'Home page description'
+          }
+        ]
+      }
+    }
   }
-};
 </script>
