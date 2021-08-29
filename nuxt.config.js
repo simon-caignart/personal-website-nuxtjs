@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "personal-website",
+    title: "Simon Caignart | Software Engineer Student",
     htmlAttrs: {
       lang: "en"
     },
@@ -16,6 +16,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~/assets/css/main.css",
     "@/assets/css/tailwind.css",
     "@/node_modules/vue-tel-input/dist/vue-tel-input.css",
     "@/node_modules/element-ui/lib/theme-chalk/index.css"
@@ -40,9 +41,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/i18n"],
   i18n: {
-    baseUrl: 'https://simoncaignart.com',
-    strategy: 'no_prefix',
-    langDir: '~/locales/',
+    baseUrl: "https://simoncaignart.com",
+    strategy: "no_prefix",
+    langDir: "~/locales/",
     locales: [
       { code: "en", iso: "en-US", file: "en.json" },
       { code: "fr", iso: "fr-FR", file: "fr.json" }
@@ -52,9 +53,9 @@ export default {
     fallbackLocale: "en",
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
+      cookieKey: "i18n_redirected",
+      redirectOn: "root"
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
