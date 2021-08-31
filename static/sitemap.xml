@@ -7,17 +7,17 @@
   </url>
   <url>
     <loc>https://simoncaignart.com/skills</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://simoncaignart.com/experiences</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simoncaignart.com/about</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://simoncaignart.com/aboutme</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
