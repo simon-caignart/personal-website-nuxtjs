@@ -1,4 +1,4 @@
-# My personal website build with NuxtJS
+# My personal website built with NuxtJS
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28c28a77-c113-4cf7-8897-6e5527f7114f/deploy-status)](https://app.netlify.com/sites/simoncaignart-nuxtjs/deploys)
 
