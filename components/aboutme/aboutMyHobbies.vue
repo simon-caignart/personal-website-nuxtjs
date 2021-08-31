@@ -44,12 +44,8 @@
 
 <script>
 import aboutBlob from "./aboutBlob";
-import loadAboutIllustration from "../../directives/loadAboutIllustration";
 
 export default {
-  directives: {
-    loadIllustration: loadAboutIllustration,
-  },
   components: {
     aboutBlob,
   },

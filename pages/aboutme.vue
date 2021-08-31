@@ -6,8 +6,8 @@
   >
     <NavBar :nav-bar-title="title" class="absolute" />
 
-    <aboutMe v-loadIllustration data-url="/me coding.png"></aboutMe>
-    <aboutMyHobbies v-loadIllustration data-url="/pullups.png"></aboutMyHobbies>
+    <aboutMe v-animate-about-illustration data-url="/me coding.png"></aboutMe>
+    <aboutMyHobbies v-animate-about-illustration data-url="/pullups.png"></aboutMyHobbies>
 
     <!-- Floating Window Illustration -->
     <transition appear name="fadelater">
@@ -63,8 +63,6 @@ import bottomWave from "../components/aboutme/aboutBottomWave";
 import aboutMe from "../components/aboutme/aboutMe";
 import aboutMyHobbies from "../components/aboutme/aboutMyHobbies";
 
-import loadAboutIllustration from "../directives/loadAboutIllustration";
-
 export default {
   components: {
     NavBar,
@@ -81,9 +79,6 @@ export default {
       let age = Math.floor(difference / 31557600000);
       return age;
     },
-  },
-  directives: {
-    loadIllustration: loadAboutIllustration,
   },
   data() {
     return {
