@@ -17,11 +17,6 @@ export default {
         this.$store.dispatch("autoTheme");
       });
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.finish();
-    });
-  },
   computed: {
     ...mapGetters({ theme: "getTheme" })
   },
@@ -36,6 +31,9 @@ export default {
         document.querySelector("html").classList.remove("bg-white");
         document.querySelector("html").classList.add("bg-gray-800");
       }
+      this.$nextTick(() => {
+        this.$nuxt.$loading.finish();
+      });
     }
   }
 };
