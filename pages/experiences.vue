@@ -256,9 +256,9 @@
             </p>
             <span class="expCardImage">
               <img
-                class="inline object-fill p-2 pb-0 xl:pb-0 xl:p-4 svg-shadow transition duration-500 transform hover:scale-110"
-                src="../assets/vue_logo.svg"
-                alt="Vue.js logo"
+                class="inline object-fill p-2 pb-0 xl:pb-0 xl:p-3 svg-shadow transition duration-500 transform hover:scale-110"
+                src="../assets/nuxt_logo.svg"
+                alt="Nuxt.js logo"
               />
             </span>
           </div>

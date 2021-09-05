@@ -118,9 +118,9 @@
     "personalProjects": {
       "title": "Projets personnels",
       "personalWebsite": {
-        "title": "Mon site web personnel",
+        "title": "Site web personnel",
         "dates": "Avril → Mai 2021",
-        "text": "J'ai développé mon site web personnel. Pour cela, j'ai utilisé Vue.JS et Tailwind CSS, ainsi qu'Adobe XD pour le design."
+        "text": "J'ai développé mon site web personnel. Pour cela, j'ai d'abord utilisé Vue.js, puis j'ai migré vers Nuxt.js. Pour le look, j'ai utilisé TailwindCSS, ainsi qu'Adobe XD pour la création du design."
       },
       "confidentialProject": {
         "title": "Projet confidentiel",
