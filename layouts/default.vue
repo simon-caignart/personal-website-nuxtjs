@@ -7,12 +7,20 @@ import { mapGetters } from "vuex";
 
 export default {
   beforeMount() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start();
+    });
     this.$store.dispatch("autoTheme");
     window
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", e => {
         this.$store.dispatch("autoTheme");
       });
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.finish();
+    });
   },
   computed: {
     ...mapGetters({ theme: "getTheme" })
