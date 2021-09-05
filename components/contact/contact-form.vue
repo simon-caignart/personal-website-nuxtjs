@@ -173,7 +173,7 @@ export default {
       console.log(data);
       axios
         .post(
-          "https://formsubmit.co/simon.caignart@gmail.com",
+          "https://formsubmit.co/11cb8b23a9018dbbacc36821361f41dc",
           data,
           {
             headers: {
