@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <client-only>
+    <client-only placeholder="Loading...">
       <transition appear name="fadelater">
         <div id="switchers" class="absolute top-3 right-3 flex z-10">
           <LocaleSwitcher />
@@ -52,7 +52,7 @@
         </NuxtLink>
       </section>
 
-      <splash-screen #placeholder />
+   <!--    <splash-screen #placeholder /> -->
     </client-only>
   </div>
 </template>
@@ -60,7 +60,6 @@
 <script>
 import LocaleSwitcher from "../components/LocalSwitcher.vue";
 import ThemeSwitcher from "../components/ThemeSwitcher.vue";
-import { mapGetters } from "vuex";
 import SplashScreen from "../components/splashScreen.vue";
 
 export default {
