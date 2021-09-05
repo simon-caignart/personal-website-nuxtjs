@@ -3,11 +3,12 @@
     id="contact-form"
     name="contact-form"
     class="w-full md:w-1/2 px-10 sm:px-22 md:px-6 xl:px-28 z-10 text-right mb-14 md:mb-0"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    accept-charset="UTF-8"
+    method="POST"
     @submit.prevent="handleSubmit"
-    data-aos="zoom-in" data-aos-delay="500" data-aos-once=true
+    data-aos="zoom-in"
+    data-aos-delay="500"
+    data-aos-once="true"
   >
     <input type="hidden" name="form-name" value="contact-form" />
     <!-- Bot Prevention Field -->
@@ -47,7 +48,9 @@
     <!-- EMAIL & PHONE ROW  -->
     <div class="contactRow">
       <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 text-left">
-        <label class="contactInputLabel" for="email">{{ $t("contact.email") }}</label>
+        <label class="contactInputLabel" for="email">{{
+          $t("contact.email")
+        }}</label>
         <input
           required
           class="contactInput"
@@ -75,7 +78,9 @@
 
     <!-- MESSAGE ROW -->
     <div class="contactRow px-3">
-      <label class="contactInputLabel" for="message">{{ $t("contact.message") }}</label>
+      <label class="contactInputLabel" for="message">{{
+        $t("contact.message")
+      }}</label>
       <textarea
         class="resize-y contactInput"
         id="message"
@@ -117,6 +122,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -125,25 +132,8 @@ export default {
       lastName: "",
       email: "",
       phone: "",
-      message: "",
+      message: ""
     };
-  },
-  computed: {
-    getFirstname() {
-      return this.firstName;
-    },
-    getLastname() {
-      return this.lastName;
-    },
-    getEmail() {
-      return this.email;
-    },
-    getPhone() {
-      return this.phone;
-    },
-    getMessage() {
-      return this.message;
-    },
   },
   methods: {
     // This is the handleSubmit method that animate the button and call the postData method
@@ -171,35 +161,41 @@ export default {
         this.postFormData();
       }, 3250);
     },
-    // This function puts all the form fields into a FormData constructor, which we later encode with the URLSearchParams constructor
-    createFormDataObj(data) {
-      const formData = new FormData();
-      for (const key of Object.keys(data)) {
-        formData.append(key, data[key]);
-      }
-      return formData;
-    },
     // This is our custom postData function
     postFormData() {
-      // This `data` object is what's passed to the createFormDataObj function. It needs all of your form fields, where the key is the name= attribute and the value is the computed value.
-      const data = {
-        "form-name": "contact-form",
-        firstname: this.getFirstname,
-        lastname: this.getLastname,
-        email: this.getEmail,
-        phone: this.getPhone,
-        message: this.getMessage,
+      let data = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        phone: this.phone,
+        message: this.message
       };
-      // This POSTs your encoded form to Netlify with the required headers (for text; headers will be different for POSTing a file) and, on success, redirects to the custom success page located at pages/thanks.vue
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(this.createFormDataObj(data)).toString(),
-      })
-        // This is how we route to /contact/success on successful form submission
-        .then(() => this.$router.push("/success"))
-        .catch((error) => alert(error));
-    },
-  },
+      console.log(data);
+      axios
+        .post(
+          "https://formsubmit.co/simon.caignart@gmail.com",
+          data,
+          {
+            headers: {
+              Accept: "application/json"
+            }
+          }
+        )
+        .then(
+          response => {
+            console.log(response)
+            if (response.status === 200) {
+              this.$router.push("/success");
+            }
+          },
+          response => {
+            this.$nuxt.error({
+              statusCode: 500,
+              message: "Unable to sent message"
+            });
+          }
+        );
+    }
+  }
 };
 </script>
