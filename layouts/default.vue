@@ -7,15 +7,12 @@ import { mapGetters } from "vuex";
 
 export default {
   beforeMount() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-    });
-    this.$store.dispatch("autoTheme");
     window
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", e => {
         this.$store.dispatch("autoTheme");
       });
+    this.$store.dispatch("autoTheme");
   },
   computed: {
     ...mapGetters({ theme: "getTheme" })
@@ -31,9 +28,6 @@ export default {
         document.querySelector("html").classList.remove("bg-white");
         document.querySelector("html").classList.add("bg-gray-800");
       }
-      this.$nextTick(() => {
-        this.$nuxt.$loading.finish();
-      });
     }
   }
 };

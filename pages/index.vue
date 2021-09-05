@@ -7,16 +7,16 @@
           <ThemeSwitcher />
         </div>
       </transition>
-    </client-only>
-    <section
-      id="name"
-      class="homeNameSection"
-      data-aos="zoom-out"
-      data-aos-delay="150"
-    >
-      <h1 class="homeName">SIMON<br />CAIGNART</h1>
-    </section>
-    <client-only>
+
+      <section
+        id="name"
+        class="homeNameSection"
+        data-aos="zoom-out"
+        data-aos-delay="150"
+      >
+        <h1 class="homeName">SIMON<br />CAIGNART</h1>
+      </section>
+
       <section
         id="cards"
         class="homeCardSection"
@@ -51,6 +51,8 @@
           <h2 class="homeCardText">{{ $t("home.contact") }}</h2>
         </NuxtLink>
       </section>
+
+      <splash-screen #placeholder />
     </client-only>
   </div>
 </template>
@@ -59,11 +61,13 @@
 import LocaleSwitcher from "../components/LocalSwitcher.vue";
 import ThemeSwitcher from "../components/ThemeSwitcher.vue";
 import { mapGetters } from "vuex";
+import SplashScreen from "../components/splashScreen.vue";
 
 export default {
   components: {
     LocaleSwitcher,
-    ThemeSwitcher
+    ThemeSwitcher,
+    SplashScreen
   },
   data() {
     return {
