@@ -24,8 +24,8 @@
         class="skillLogo svg-shadow"
       />
       <img
-        src="../../assets/xd_logo.svg"
-        alt="Adobe XD logo"
+        src="../../assets/illustrator_logo.svg"
+        alt="Adobe Illustrator logo"
         height="75px"
         width="75px"
         class="skillLogo svg-shadow"
