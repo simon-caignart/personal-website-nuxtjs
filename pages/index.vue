@@ -2,7 +2,7 @@
   <div class="home">
     <client-only>
 
-      <splash-screen #placeholder></splash-screen>
+      <loader slot="placeholder"></loader>
 
       <transition appear name="fadelater">
         <div id="switchers" class="absolute top-3 right-3 flex z-10">
@@ -54,8 +54,6 @@
           <h2 class="homeCardText">{{ $t("home.contact") }}</h2>
         </NuxtLink>
       </section>
-
-   <!--    <splash-screen #placeholder /> -->
     </client-only>
   </div>
 </template>
@@ -63,13 +61,13 @@
 <script>
 import LocaleSwitcher from "../components/LocalSwitcher.vue";
 import ThemeSwitcher from "../components/ThemeSwitcher.vue";
-import SplashScreen from "../components/splashScreen.vue";
+import loader from '../components/loader.vue';
 
 export default {
   components: {
     LocaleSwitcher,
     ThemeSwitcher,
-    SplashScreen
+    loader
   },
   data() {
     return {
