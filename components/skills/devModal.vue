@@ -1,7 +1,10 @@
 <template>
   <el-collapse v-model="activeNames">
     <!-- PROGRAMMING LANGUAGES -->
-    <el-collapse-item title="Programming Languages" name="1">
+    <el-collapse-item name="1">
+      <template slot="title">
+        {{ $t("skills.modal.programmingLanguages") }}
+      </template>
       <!-- C# -->
       <div class="devModalRow">
         <img
@@ -70,7 +73,10 @@
       </div>
     </el-collapse-item>
     <!-- UI Frameworks -->
-    <el-collapse-item title="UI Frameworks" name="2">
+    <el-collapse-item name="2">
+      <template slot="title">
+        {{ $t("skills.modal.UIFrameworks") }}
+      </template>
       <!-- JavaFx -->
       <div class="devModalRow">
         <img
@@ -96,6 +102,9 @@
     </el-collapse-item>
     <!-- WEB DEVELOPMENT -->
     <el-collapse-item title="Web Development" name="3">
+      <template slot="title">
+        {{ $t("skills.modal.webDevelopment") }}
+      </template>
       <!-- HTML -->
       <div class="devModalRow">
         <img
@@ -185,7 +194,11 @@
         </p>
       </div>
     </el-collapse-item>
+    <!-- DEVELOPMENT TOOLS -->
     <el-collapse-item title="Development tools" name="4">
+      <template slot="title">
+        {{ $t("skills.modal.developmentTools") }}
+      </template>
       <!-- VS CODE -->
       <div class="devModalRow">
         <img
@@ -217,6 +230,45 @@
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.intellij") }}
+        </p>
+      </div>
+    </el-collapse-item>
+    <!-- CI/CD -->
+    <el-collapse-item title="CI/CD" name="5">
+      <template slot="title">
+        {{ $t("skills.modal.CI/CD") }}
+      </template>
+      <!-- Azure Pipeline -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/azure_logo.svg"
+          alt="Azure logo"
+          class="w-12 p-1.5 svg-shadow-little"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.azure") }}
+        </p>
+      </div>
+      <!-- Jenkins -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/jenkins_logo.svg"
+          alt="Jenkins logo"
+          class="w-12 p-1.5 svg-shadow-little"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.jenkins") }}
+        </p>
+      </div>
+      <!-- TeamCity -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/teamcity_logo.svg"
+          alt="TeamCity logo"
+          class="w-12 p-0.5 svg-shadow-little"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.teamcity") }}
         </p>
       </div>
     </el-collapse-item>

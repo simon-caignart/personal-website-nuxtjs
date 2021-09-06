@@ -40,6 +40,7 @@
       "UIFrameworks": "Frameworks UI",
       "webDevelopment": "Développement web",
       "developmentTools": "Outils de développement",
+      "CI/CD": "CI/CD",
       "c#": "C#. J'ai réalisé un projet scolaire en C#, je l'ai également utilisé avec ASP.NET pour créer des API. Enfin, j'ai travaillé en tant que freelance sur du C#.",
       "java": "Java. J'ai réalisé un projet complet en Java pendant un stage de quatre mois.",
       "c": "Langage C. Je l'ai utilisé pour faire des petits programmes lorsque j'ai découvert la programmation.",
@@ -58,7 +59,10 @@
       "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement.",
       "vscode": "Visual Studio Code. C'est mon IDE principal, je l'utilise essentiellement pour les projets web.",
       "vs": "Visual Studio. L'IDE avec lequel je choisis de travailler lorsqu'il s'agit de développement C#, ASP.NET, WPF.",
-      "intellij": "Intellij. L'IDE que je choisis pour travailler avec Java et JavaFx."
+      "intellij": "Intellij. L'IDE que je choisis pour travailler avec Java et JavaFx.",
+      "azure" : "Azure Pipelines. Je l'ai utilisé pour l'intégration continue de services ASP.NET et pour une application WPF.",
+      "jenkins" : "Jenkins. J'ai utilisé Jenkins pour une application Java.",
+      "teamcity" : "TeamCity. Je l'ai utilisé pour le CI d'une application JavaFx et d'une application Angular."
     }
   },
   "experiences": {

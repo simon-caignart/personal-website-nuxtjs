@@ -40,6 +40,7 @@
       "UIFrameworks": "UI Frameworks",
       "webDevelopment": "Web Development",
       "developmentTools": "Development tools",
+      "CI/CD": "CI/CD",
       "c#": "C#. Did a school project using C# and used it with ASP.NET to create APIs for an internship. Also Worked as a Freelancer with it. I'm pretty familiar with it.",
       "java": "Java. I did a complete project during an internship of four months using it.",
       "c": "Language C. Did some basic development at the beginning of my coding journey with it.",
@@ -58,7 +59,10 @@
       "tailwind": "Tailwind CSS. I used this CSS framework for the development of the website you are actually seeing.",
       "vscode": "Visual Studio Code. That's my main tool for developing, I mainly use it on web projects.",
       "vs": "Visual Studio. The IDE I choose to work with when dealing with C#, ASP.NET, WPF development.",
-      "intellij": "Intellij. My go to when dealing with Java and JavaFx."
+      "intellij": "Intellij. My go to when dealing with Java and JavaFx.",
+      "azure": "Azure Pipelines. Used it for ASP.NET services and for a WPF application.",
+      "jenkins": "Jenkins. I used Jenkins for a Java application.",
+      "teamcity": "TeamCity. Used it for the CI of a JavaFx and an Angular application."
     }
   },
   "experiences": {
