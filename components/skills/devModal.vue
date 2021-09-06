@@ -133,18 +133,29 @@
       <div class="devModalRow">
         <img
           src="../../assets/vue_logo.svg"
-          alt="JS logo"
+          alt="Vue logo"
           class="w-12 p-1 svg-shadow-little"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.vuejs") }}
         </p>
       </div>
+      <!-- Nuxt.Js -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/nuxt_logo.svg"
+          alt="Nuxt logo"
+          class="w-12 p-1 svg-shadow-little"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.nuxtjs") }}
+        </p>
+      </div>
       <!-- Angular -->
       <div class="devModalRow">
         <img
           src="../../assets/angular_logo.svg"
-          alt="JS logo"
+          alt="Angular logo"
           class="w-12 svg-shadow-little"
         />
         <p class="devModalRowText">
@@ -155,7 +166,7 @@
       <div class="devModalRow">
         <img
           src="../../assets/laravel_logo.svg"
-          alt="JS logo"
+          alt="Laravel logo"
           class="w-12 p-1 svg-shadow-little"
         />
         <p class="devModalRowText">
@@ -166,7 +177,7 @@
       <div class="devModalRow">
         <img
           src="../../assets/tailwindcss_logo.svg"
-          alt="JS logo"
+          alt="TailwindCSS logo"
           class="w-12 p-1 svg-shadow-little"
         />
         <p class="devModalRowText">
@@ -201,7 +212,7 @@
       <div class="devModalRow">
         <img
           src="../../assets/intellij_logo.png"
-          alt="VS Studio 2019 logo"
+          alt="Intellij logo"
           class="w-12 svg-shadow-little"
         />
         <p class="devModalRowText">
@@ -216,8 +227,8 @@
 export default {
   data() {
     return {
-      activeNames: ["1"],
+      activeNames: ["1"]
     };
-  },
+  }
 };
 </script>
