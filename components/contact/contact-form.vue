@@ -127,7 +127,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      tel_options: { placeholder: "", name: "phone" },
+      tel_options: { placeholder: "", name: "phone"},
       firstName: "",
       lastName: "",
       email: "",
