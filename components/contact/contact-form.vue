@@ -173,10 +173,9 @@ export default {
         _honey: this._honey,
         _captcha: false, // used to disable the captcha of formsubmit
       };
-      console.log(data);
       axios
         .post(
-          "https://formsubmit.co/simon.caignart@gmail.com",
+          "https://formsubmit.co/simon.caignart@gmail.com/",
           data,
           {
             headers: {
