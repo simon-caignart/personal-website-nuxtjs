@@ -175,7 +175,7 @@ export default {
       };
       axios
         .post(
-          "https://formsubmit.co/simon.caignart@gmail.com/",
+          "https://formsubmit.co/simon.caignart@gmail.com",
           data,
           {
             headers: {
