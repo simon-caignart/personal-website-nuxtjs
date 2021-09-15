@@ -168,7 +168,8 @@ export default {
         lastName: this.lastName,
         email: this.email,
         phone: this.phone,
-        message: this.message
+        message: this.message,
+        _captcha: false, // used to disable the captcha of formsubmit
       };
       console.log(data);
       axios
