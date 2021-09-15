@@ -14,7 +14,7 @@
     <!-- Bot Prevention Field -->
     <p class="hidden">
       <label
-        >Don’t fill this out if you’re human: <input name="bot-field"
+        >Don’t fill this out if you’re human: <input name="bot-field" v-model="botfield"
       /></label>
     </p>
     <!-- FIRST NAME & LAST NAME ROW -->
@@ -132,7 +132,8 @@ export default {
       lastName: "",
       email: "",
       phone: "",
-      message: ""
+      message: "",
+      _honey: ""
     };
   },
   methods: {
@@ -169,6 +170,7 @@ export default {
         email: this.email,
         phone: this.phone,
         message: this.message,
+        _honey: this._honey,
         _captcha: false, // used to disable the captcha of formsubmit
       };
       console.log(data);
