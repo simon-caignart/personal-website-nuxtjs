@@ -37,7 +37,7 @@ export default {
   props: ["error"],
   layout: "error", // you can set a custom layout for the error page
   mounted: function() {
-    //this.changeButtonFont();
+    this.$nextTick().then(() => this.changeButtonFont());
   },
   head() {
     return {

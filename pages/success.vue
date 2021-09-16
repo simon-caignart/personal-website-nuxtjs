@@ -26,7 +26,7 @@
 <script>
 export default {
   mounted: function() {
-    this.changeButtonFont();
+    this.$nextTick().then(() => this.changeButtonFont());
   },
   head() {
     return {
