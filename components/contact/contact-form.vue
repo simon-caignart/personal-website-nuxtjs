@@ -171,7 +171,8 @@ export default {
         phone: this.phone,
         message: this.message,
         _honey: this._honey,
-        _captcha: false, // used to disable the captcha of formsubmit
+        _captcha: "false", // used to disable the captcha of formsubmit
+        _autoresponse:"Thanks for your message! Here's a copy of your submission, I will reach out to you as soon as possible 😁"
       };
       axios
         .post(
@@ -187,7 +188,7 @@ export default {
           response => {
             console.log(response)
             if (response.status === 200) {
-              //this.$router.push("/success");
+              this.$router.push("/success");
             }
           },
           response => {
