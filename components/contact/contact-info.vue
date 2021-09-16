@@ -23,7 +23,7 @@
       <div class="text-center mt-3">
         <!-- Linkedin Icon -->
         <a
-          href="https://linkedin.com/in/simon-caignart-49768a189"
+          href="https://fr.linkedin.com/in/simon-caignart-49768a189"
           target="_blank"
           rel="noopener noreferrer"
         >

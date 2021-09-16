@@ -82,7 +82,7 @@
         $t("contact.message")
       }}</label>
       <textarea
-        class="resize-y contactInput"
+        class="resize-none contactInput"
         id="message"
         name="message"
         rows="10"
@@ -187,7 +187,7 @@ export default {
           response => {
             console.log(response)
             if (response.status === 200) {
-              this.$router.push("/success");
+              //this.$router.push("/success");
             }
           },
           response => {
