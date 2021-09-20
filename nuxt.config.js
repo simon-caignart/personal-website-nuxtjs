@@ -9,16 +9,17 @@ export default {
       lang: "en-US",
     },
     link: [
-      { rel: "shortcut icon", href: "https://simoncaignart.com/favicon.ico" },
-      { rel: "icon", href: "https://simoncaignart.com/favicon.ico" },
-      { rel: "apple-touch-icon", href: "https://simoncaignart.com/favicon.ico" },
+      { rel: "shortcut icon", href: "/favicon.ico" },
+      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel:"icon", type:"image/svg+xml", href:"/icon.svg", },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
