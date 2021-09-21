@@ -21,7 +21,6 @@ export default {
       { name: "format-detection", content: "telephone=no" }
     ],
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "~/node_modules/vue-tel-input/dist/vue-tel-input.css",
@@ -29,7 +28,6 @@ export default {
     "~/assets/css/main.css",
     "~/assets/css/tailwind.css",
   ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "~/plugins/vue-tel-input.js",
@@ -37,16 +35,12 @@ export default {
     { src: "~/plugins/aos", ssr: false },
     "~/plugins/animateAboutIllustration.client.js"
   ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss"
   ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/i18n"],
   i18n: {
@@ -57,7 +51,6 @@ export default {
       { code: "en", iso: "en-US", file: "en.json" },
       { code: "fr", iso: "fr-FR", file: "fr.json" }
     ],
-
     defaultLocale: "en",
     fallbackLocale: "en",
     detectBrowserLanguage: {
@@ -66,7 +59,6 @@ export default {
       redirectOn: "root"
     }
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };

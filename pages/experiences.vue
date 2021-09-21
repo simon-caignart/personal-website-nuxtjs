@@ -31,6 +31,7 @@
         class="w-full xl:w-1/2 xl:pb-10"
         data-aos="zoom-in"
         data-aos-delay="500"
+        data-aos-offset="100"
       >
         <h1 class="expSectionTitle">
           {{ $t("experiences.formations.title") }}
@@ -73,7 +74,7 @@
         </div>
 
         <!-- Lycée -->
-        <div class="expCard" data-aos="zoom-in-right">
+        <div class="expCard">
           <h2 class="expCardTitle">
             {{ $t("experiences.formations.merleau.title") }}
           </h2>
