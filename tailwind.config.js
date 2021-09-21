@@ -9,6 +9,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      height: {
+        screen80: '80vh',
+       },
       maxHeight: {
         '90': '90%',
        },

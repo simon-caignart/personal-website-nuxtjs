@@ -1,16 +1,16 @@
 <template>
   <div
     name="contact"
-    class="bg-gradient-to-r from-purple-600 via-purple-500 to-pink-400 min-h-full overflow-hidden"
+    class="bg-gradient-to-r from-purple-600 via-purple-500 to-pink-400"
   >
     <NavBar :nav-bar-title="title" class="absolute" />
     <div
-      class="flex flex-col md:flex-row w-full items-center justify-items-center md:h-screen md:pt-22"
+      class="flex flex-col md:flex-row w-full items-center justify-items-center md:min-h-screen md:pt-22"
     >
       <ContactInfo />
       <SectionSeparator
         :width="sectionWidth"
-        class="h-5/6"
+        class="md:h-screen80"
         data-aos="zoom-in"
         data-aos-delay="500"
         data-aos-once="true"

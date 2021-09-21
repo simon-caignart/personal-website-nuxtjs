@@ -2,7 +2,7 @@
   <form
     id="contact-form"
     name="contact-form"
-    class="w-full md:w-1/2 px-10 sm:px-22 md:px-6 xl:px-28 z-10 text-right mb-14 md:mb-0"
+    class="w-full md:w-1/2 px-10 sm:px-22 md:px-6 xl:px-28 z-10 text-right mb-12 md:mb-5"
     accept-charset="UTF-8"
     method="POST"
     @submit.prevent="handleSubmit"
@@ -14,7 +14,7 @@
     <!-- Bot Prevention Field -->
     <p class="hidden">
       <label
-        >Don’t fill this out if you’re human: <input name="bot-field" v-model="botfield"
+        >Don’t fill this out if you’re human: <input name="bot-field" v-model="honey"
       /></label>
     </p>
     <!-- FIRST NAME & LAST NAME ROW -->
@@ -133,7 +133,7 @@ export default {
       email: "",
       phone: "",
       message: "",
-      _honey: ""
+      honey: ""
     };
   },
   methods: {
@@ -170,7 +170,7 @@ export default {
         email: this.email,
         phone: this.phone,
         message: this.message,
-        _honey: this._honey,
+        _honey: this.honey,
         _captcha: "false", // used to disable the captcha of formsubmit
         _autoresponse:"Thanks for your message! Here's a copy of your submission, I will reach out to you as soon as possible 😁"
       };
