@@ -9,10 +9,12 @@
 }
 
 /* Used for animations */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 
@@ -38,11 +40,34 @@
   filter: drop-shadow(2px 2px 1.5px rgb(0 0 0 / 0.225));
 }
 
-
 /* This media quezy is used to scale down the home page on devices with 125% scale at system level */
 @media (-webkit-device-pixel-ratio: 1.25) {
   .home {
-    zoom: 0.8;
+    //zoom: 0.8;
+  }
+  .homeName {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  @media (min-width: 670px) {
+    .homeName {
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+  }
+
+  @media (min-width: 980px) {
+    .homeName {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .homeName {
+      font-size: 7.25rem;
+      line-height: 1;
+    }
   }
 }
 

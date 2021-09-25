@@ -4,9 +4,8 @@
 
 
 /* Home View */
-
 .home {
-  @apply min-h-screen w-full max-w-screen-3xl bg-white dark:bg-gray-800 flex flex-col items-center justify-center  xl:flex-row overflow-hidden;
+  @apply min-h-screen w-full max-w-screen-3xl bg-white dark:bg-gray-800 flex flex-col items-center justify-center xl:flex-row overflow-hidden;
 }
 
 .homeNameSection {
