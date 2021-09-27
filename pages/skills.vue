@@ -22,7 +22,7 @@ export default {
       title: this.$t("home.skills"),
       metaTitle: "Simon Caignart | Skills",
       description:
-        "Development of all kinds of software as well as websites. I am passionate about building excellent software that improves the lives of those around me",
+        "Development of all kinds of software as well as websites. I am passionate about building excellent software that improves the lives of those around me"
     };
   },
   head() {
@@ -32,13 +32,17 @@ export default {
       htmlAttrs: {
         ...i18nHead.htmlAttrs
       },
-      link: [{ rel: "canonical", href: "https://simoncaignart.com/skills" },...i18nHead.link],
+      link: [
+        { rel: "canonical", href: "https://simoncaignart.com/skills" },
+        ...i18nHead.link
+      ],
       meta: [
+        { name: "googlebot", content: "noindex" },
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
         {
           name: "author",
-          content: "Simon Caignart",
+          content: "Simon Caignart"
         },
         { name: "description", content: this.description },
         // OpenGraph
@@ -46,45 +50,45 @@ export default {
         { property: "og:locale", content: "en_US" },
         {
           property: "og:description",
-          content: this.description,
+          content: this.description
         },
         { property: "og:url", content: "https://simoncaignart.com/skills" },
         {
           property: "og:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/favicon.ico"
         },
         // Twitter
         {
           property: "twitter:card",
-          content: "summary",
+          content: "summary"
         },
         {
           property: "twitter:site",
-          content: "@SimonCaignart",
+          content: "@SimonCaignart"
         },
         {
           property: "twitter:creator",
-          content: "@SimonCaignart",
+          content: "@SimonCaignart"
         },
         {
           property: "twitter:title",
-          content: this.metaTitle,
+          content: this.metaTitle
         },
         {
           property: "twitter:description",
-          content: this.description,
+          content: this.description
         },
         {
           property: "twitter:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/favicon.ico"
         },
         {
           property: "twitter:image:alt",
-          content: this.metaTitle,
+          content: this.metaTitle
         },
         ...i18nHead.meta
-      ],
+      ]
     };
-  },
+  }
 };
 </script>

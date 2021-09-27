@@ -175,9 +175,9 @@
               />
             </span>
           </div>
-          <a class="expCardLink" @click="dialogCgrVisible = true"
-            >{{ $t("experiences.moreInfo") }}</a
-          >
+          <a class="expCardLink" @click="dialogCgrVisible = true">{{
+            $t("experiences.moreInfo")
+          }}</a>
         </div>
       </div>
     </section>
@@ -207,8 +207,12 @@
 
         <!-- Autonomous Car -->
         <div class="expCardProjects" data-aos="zoom-in-up">
-          <h2 class="expCardTitle">{{ $t("experiences.schoolProjects.autonomousCar.title") }}</h2>
-          <h3 class="expCardDates">{{ $t("experiences.schoolProjects.autonomousCar.dates") }}</h3>
+          <h2 class="expCardTitle">
+            {{ $t("experiences.schoolProjects.autonomousCar.title") }}
+          </h2>
+          <h3 class="expCardDates">
+            {{ $t("experiences.schoolProjects.autonomousCar.dates") }}
+          </h3>
           <p class="pt-4 w-full dark:text-gray-300 pb-4">
             {{ $t("experiences.schoolProjects.autonomousCar.text") }}
           </p>
@@ -221,11 +225,21 @@
 
         <!-- Student Association WebSite -->
         <div class="expCardProjects" data-aos="zoom-in-up">
-          <h2 class="expCardTitle">{{ $t("experiences.schoolProjects.studentAssociationWebsite.title") }}</h2>
-          <h3 class="expCardDates">{{ $t("experiences.schoolProjects.studentAssociationWebsite.dates") }}</h3>
+          <h2 class="expCardTitle">
+            {{
+              $t("experiences.schoolProjects.studentAssociationWebsite.title")
+            }}
+          </h2>
+          <h3 class="expCardDates">
+            {{
+              $t("experiences.schoolProjects.studentAssociationWebsite.dates")
+            }}
+          </h3>
           <div class="expCardInlineRow">
             <p class="expCardParagraph">
-              {{ $t("experiences.schoolProjects.studentAssociationWebsite.text") }}
+              {{
+                $t("experiences.schoolProjects.studentAssociationWebsite.text")
+              }}
             </p>
             <span class="expCardImage">
               <img
@@ -235,7 +249,9 @@
               />
             </span>
           </div>
-          <a class="expCardLink" @click="dialogStudentAssociationVisible = true"
+          <a
+            class="expCardLink"
+            @click="dialogStudentAssociationVisible = true"
             >{{ $t("experiences.moreInfo") }}</a
           >
         </div>
@@ -244,13 +260,17 @@
       <!-- Personal Projects -->
       <div class="w-full mt-20 xl:mt-0 xl:w-1/2 z-10">
         <h1 class="expSectionTitleProjects">
-           {{ $t("experiences.personalProjects.title") }}
+          {{ $t("experiences.personalProjects.title") }}
         </h1>
 
         <!-- Personal Website -->
         <div class="expCardProjects" data-aos="zoom-in-up">
-          <h2 class="expCardTitle">{{ $t("experiences.personalProjects.personalWebsite.title") }}</h2>
-          <h3 class="expCardDates">{{ $t("experiences.personalProjects.personalWebsite.dates") }}</h3>
+          <h2 class="expCardTitle">
+            {{ $t("experiences.personalProjects.personalWebsite.title") }}
+          </h2>
+          <h3 class="expCardDates">
+            {{ $t("experiences.personalProjects.personalWebsite.dates") }}
+          </h3>
           <div class="expCardInlineRow">
             <p class="expCardParagraph pt-4">
               {{ $t("experiences.personalProjects.personalWebsite.text") }}
@@ -266,8 +286,12 @@
         </div>
 
         <div class="expCardProjects" data-aos="zoom-in-up">
-          <h2 class="expCardTitle">{{ $t("experiences.personalProjects.confidentialProject.title") }}</h2>
-          <h3 class="expCardDates">{{ $t("experiences.personalProjects.confidentialProject.dates") }}</h3>
+          <h2 class="expCardTitle">
+            {{ $t("experiences.personalProjects.confidentialProject.title") }}
+          </h2>
+          <h3 class="expCardDates">
+            {{ $t("experiences.personalProjects.confidentialProject.dates") }}
+          </h3>
           <div class="expCardInlineRow">
             <p class="expCardParagraph">
               {{ $t("experiences.personalProjects.confidentialProject.text") }}
@@ -302,7 +326,7 @@ export default {
     Eixa6,
     AutonomousCar,
     StudentAssociationWebsite,
-    SectionSeparator,
+    SectionSeparator
   },
   data() {
     return {
@@ -315,7 +339,7 @@ export default {
 
       metaTitle: "Simon Caignart | Experiences",
       description:
-        "Discover the different experiences I had until today, my internships, my studies, my projects.",
+        "Discover the different experiences I had until today, my internships, my studies, my projects."
     };
   },
   head() {
@@ -326,14 +350,16 @@ export default {
         ...i18nHead.htmlAttrs
       },
       link: [
-        { rel: "canonical", href: "https://simoncaignart.com/experiences" }, ...i18nHead.link,
+        { rel: "canonical", href: "https://simoncaignart.com/experiences" },
+        ...i18nHead.link
       ],
       meta: [
+        { name: "googlebot", content: "noindex" },
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
         {
           name: "author",
-          content: "Simon Caignart",
+          content: "Simon Caignart"
         },
         { name: "description", content: this.description },
         // OpenGraph
@@ -341,48 +367,48 @@ export default {
         { property: "og:locale", content: "en_US" },
         {
           property: "og:description",
-          content: this.description,
+          content: this.description
         },
         {
           property: "og:url",
-          content: "https://simoncaignart.com/experiences",
+          content: "https://simoncaignart.com/experiences"
         },
         {
           property: "og:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/favicon.ico"
         },
         // Twitter
         {
           property: "twitter:card",
-          content: "summary",
+          content: "summary"
         },
         {
           property: "twitter:site",
-          content: "@SimonCaignart",
+          content: "@SimonCaignart"
         },
         {
           property: "twitter:creator",
-          content: "@SimonCaignart",
+          content: "@SimonCaignart"
         },
         {
           property: "twitter:title",
-          content: this.metaTitle,
+          content: this.metaTitle
         },
         {
           property: "twitter:description",
-          content: this.description,
+          content: this.description
         },
         {
           property: "twitter:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/favicon.ico"
         },
         {
           property: "twitter:image:alt",
-          content: this.metaTitle,
+          content: this.metaTitle
         },
         ...i18nHead.meta
-      ],
+      ]
     };
-  },
+  }
 };
 </script>
