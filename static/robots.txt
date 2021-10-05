@@ -1,3 +1,10 @@
+User-agent: Googlebot
+Allow: /
+Allow: /contact
+Disallow: /aboutme
+Disallow: /experiences
+Disallow: /skills
+
 User-agent: *
 Allow: /
 
