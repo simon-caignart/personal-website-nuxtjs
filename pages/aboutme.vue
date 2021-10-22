@@ -99,7 +99,6 @@ export default {
       },
       link: [{ rel: "canonical", href: "https://simoncaignart.com/aboutme" },...i18nHead.link],
       meta: [
-        { name:"googlebot", content:"noindex"},
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
         {

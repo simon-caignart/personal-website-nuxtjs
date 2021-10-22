@@ -49,7 +49,6 @@ export default {
         ...i18nHead.link
       ],
       meta: [
-        { name: "googlebot", content: "noindex" },
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
         {
