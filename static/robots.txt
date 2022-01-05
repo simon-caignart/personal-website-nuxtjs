@@ -2,8 +2,8 @@ User-agent: Googlebot
 Allow: /
 Allow: /contact
 Disallow: /aboutme
-Disallow: /experiences
-Disallow: /skills
+Allow: /experiences
+Allow: /skills
 
 User-agent: *
 Allow: /
