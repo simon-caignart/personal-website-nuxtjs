@@ -6,39 +6,38 @@
     "contact": "Contact"
   },
   "skills": {
-    "development": {
+    "languages": {
       "clickHere": "Click here for more details",
-      "title": "Development",
-      "softwareEngineer": "Software engineer",
-      "text1": "Development of all kinds of software as well as websites.",
-      "text2": "I am passionate about building excellent software that improves the lives of those around me, coding things from scratch, and bringing ideas to life."
+      "title": "Languages",
+      "text1": "I am passionate about building excellent software that improves the lives of those around me, coding things from scratch, and bringing ideas to life.",
+      "text2": "You can see the languages of my tech stack next to this block. Don't hesitate to click on the 3 little dots to discover even more!"
     },
-    "databases": {
-      "title": "Databases",
-      "text": "SQL and NoSQL database management."
+    "orms": {
+      "title": "ORMs",
+      "text": "I mainly use Prisma and Mongoose ORMs."
     },
     "containerization": {
       "title": "Containerization",
       "text1": "Application containerization with docker and docker compose.",
       "text2": "I can also create, configure and manage a Kubernetes system, from the cluster creation all the way to the ingress configuration."
     },
-    "network": {
-      "title": "Network",
-      "text1": "I can set up a network and secure it with a proxy, VPN, firewall, demilitarized zone, etc.",
-      "text2": "I can also configure an Active Directory service and manage it."
+    "frameworks": {
+      "title": "Frameworks and Libraries",
+      "text1": "You will find in the following block the frameworks and libraries that I mainly use.",
+      "text2": "I love working with React and Tailwind CSS for frontend development. For the backend, I like to use GraphQL with the Apollo platform."
     },
-    "adobe": {
-      "title": "Adobe",
-      "text": "I have an intermediate level in Photoshop, Premiere Pro, InDesign and Illustrator."
+    "ci/cd": {
+      "title": "CI/CD",
+      "text": "I do continuous integration mainly with GitHub Actions. When it comes to continuous deployment, I like to use Argo CD, to deploy microservices directly into Kubernetes, following the GitOps method."
     },
-    "office": {
-      "title": "Office",
-      "text": "I use the microsoft office suite everyday for my school work, that's why I master the main applications, Word, PowerPoint, Excel, Visio."
+    "cloud": {
+      "title": "Cloud",
+      "text": "I used the Google Cloud Platform for my web platform project. The microservices architecture was hosted on Kubernetes Engine. We used Artifact Registry to store our docker images, as well as Cloud Storage for the dynamic content of the platform (images)."
     },
     "modal": {
-      "programmingLanguages": "Programming languages",
+      "languages": "Languages",
       "UIFrameworks": "UI Frameworks",
-      "webDevelopment": "Web Development",
+      "frameworksAndLibraries": "Frameworks and Libraries",
       "developmentTools": "Development tools",
       "CI/CD": "CI/CD",
       "c#": "C#. Did a school project using C# and used it with ASP.NET to create APIs for an internship. Also Worked as a Freelancer with it. I'm pretty familiar with it.",
@@ -47,22 +46,37 @@
       "python": "Python. Worked with Python mainly to produce heuristic and meta-heuristic algorithms in order to solve some NP-Hard problems, like the VRP.",
       "arduino": "Arduino. Used it a lot at school for two projects.",
       "swift": "Swift. Actually discovering it while developing an IOS app.",
+      "graphql": "GraphQL. Used this query language for all the APIs of my entrepreneurship project.",
+      "apollo": "Apollo. Used this platform to create the GraphQL servers of all the microservices of my entrepreneurship project. I also used Apollo Federation to have a single entry point and Apollo Client to query the backend from the frontend apps.",
       "javafx": "JavaFx. Used it for a complete project during an internship of four months.",
       "wpf": "WPF. Used WPF during a school project to create a file backup manager.",
-      "html": "HTML. Used it in various web projects.",
-      "css": "CSS. Used it in various web projects.",
-      "js": "Javascript. Used it in various web projects.",
+      "js": "JavaScript. Used it in a lot of web projects.",
+      "ts": "TypeScript. I now use TypeScript as often as possible instead of JS, for frontend and backend development.",
+      "react": "React. I used it for the frontends of my entrepreneurship project.",
+      "nextjs": "Next.js. Used this framework on top of React for the frontends of my entrepreneuship project.",
       "vuejs": "Vue JS. Originally constructed this website using this Javascript Framework.",
       "nuxtjs": "Nuxt JS. Migrated the first version of this website to Nuxt JS.",
       "angular": "Angular. Created a back-office website for a microservices oriented application.",
       "laravel": "Laravel. Used this framework during a school project for the development of a website with user managment and an online store.",
-      "tailwind": "Tailwind CSS. I used this CSS framework for the development of the website you are actually seeing.",
-      "vscode": "Visual Studio Code. That's my main tool for developing, I mainly use it on web projects.",
+      "tailwind": "Tailwind CSS. I used this CSS framework for the development of the website you are actually seeing, as well as in other projects.",
+      "vscode": "Visual Studio Code. That's my main tool for developing.",
       "vs": "Visual Studio. The IDE I choose to work with when dealing with C#, ASP.NET, WPF development.",
       "intellij": "Intellij. My go to when dealing with Java and JavaFx.",
+      "githubActions": "GitHub Actions. I use this tool for the continuous integration of all my recent projects.",
+      "googleCloudBuild": "Google Cloud Build. I used this google cloud service for the continuous delivery of my entrepreneurship project.",
+      "argocd": "ArgoCD. I used it for the continuous deployment of the microservices of my entrepreneurship project in a Kubernetes environment.",
       "azure": "Azure Pipelines. Used it for ASP.NET services and for a WPF application.",
       "jenkins": "Jenkins. I used Jenkins for a Java application.",
-      "teamcity": "TeamCity. Used it for the CI of a JavaFx and an Angular application."
+      "teamcity": "TeamCity. Used it for the CI of a JavaFx and an Angular application.",
+      "cloudPlatforms": "Cloud Platforms",
+      "googleCloudPlatform": "Google Cloud Platform. I used the google cloud platform to host a microservices oriented application (10 services) with Google Kubernetes Engine. To store the docker images of these services, I used Google Artifact Registry. I also used the Google Cloud Build CI/CD platform. Finally, I used Google Cloud Storage to store images to display on the frontend",
+      "orms": "ORMs",
+      "prisma": "Prisma. I used this ORM for the backend services of my entrepreneurship project.",
+      "mongoose": "Mongoose. I used it in school projects.",
+      "containerization": "Containerization",
+      "docker": "Docker. Use it everyday for development in a lot of different projects.",
+      "dockerCompose": "Docker Compose. I used it in various projects to manage many containers at once.",
+      "kubernetes": "Kubernetes. Used Kubernetes in an internship as well as in my entrepreneurship project."
     }
   },
   "experiences": {
@@ -87,31 +101,31 @@
       "eixa6": {
         "title": "Eixa6 Informatique",
         "dates": "January → April 2021",
-        "detailedDates":"January 4 → April 16 2021",
+        "detailedDates": "January 4 → April 16 2021",
         "text": "Constructed a microservices oriented application, made for the management of the missions and clients of the company.",
-        "detailedText":"During this internship that lasted 4 month, I constructed a microservice-oriented application made for the management of the missions and clients of the company. The different services of the application were hosted on a cluster of four raspberry pi 4, each one running kubernetes. All those services were ASP.NET Web Apis, using mongodb databases. For the front-end, the desktop client was made with JavaFx, and the back Office web app with Angular. The security of this application was managed with JWT Tokens and an authentication service."
+        "detailedText": "During this internship that lasted 4 month, I constructed a microservice-oriented application made for the management of the missions and clients of the company. The different services of the application were hosted on a cluster of four raspberry pi 4, each one running kubernetes. All those services were ASP.NET Web Apis, using mongodb databases. For the front-end, the desktop client was made with JavaFx, and the back Office web app with Angular. The security of this application was managed with JWT Tokens and an authentication service."
       },
       "cgr": {
         "title": "CGR Cinémas",
         "dates": "March → July 2020",
-        "detailedDates":"Mars 30 → July 31 2020",
+        "detailedDates": "Mars 30 → July 31 2020",
         "text": "Developed a new internal software allowing to manage all the screens of the movie theaters (Lobby, Exterior, Entrance etc).",
         "detailedText": "This internship, that lasted 10 weeks, was done at the headquarters of the company CGR Cinémas, located in Périgny. For several years, the CGR Cinemas group has had a team of programmers responsible for the development and maintenance of a software suite, used in cinemas and at the headquarters. This suite includes a display and management software (in cinemas and at headquarters). This internship was part of the work regularly implemented to improve the existing and facilitate the work of end users. This internship focused on the display management software used in cinemas, my work therefore consisted of carrying out a project to overhaul the display management software, which is now called \"EasyCiné Display\". This software is now used in every of the 71 movie theaters of the group, and can be seen in action on the screens of the lobbies, entrances, exteriors, etc."
       }
     },
     "schoolProjects": {
-      "title":"School Projects",
+      "title": "School Projects",
       "autonomousCar": {
         "title": "Prototype of an autonomous car",
         "dates": "June 2019",
         "text": "Created a prototype of an autonomous car (1:18 scale) capable of moving around a city and searching for available parking places.",
         "detailedText1": "The goal of this project was to create a prototype of an autonomous car capable of moving around a city and searching for available parking spots. The main component was an arduino, controlling everything, from the motors to the sensors. We also created an interface with Java and Swing to display the car's position and available parking spots in real time. The car was communicating its location to the computer via a radio transmitter.",
-        "detailedText2":"The way taken by the car was calculated thanks to the ",
+        "detailedText2": "The way taken by the car was calculated thanks to the ",
         "dijkstra": "Dijkstra algorithm",
-        "detailedText3":". Indeed, the latter makes it possible to find the shortest path. The streets of the city were represented by black lines and the car could follow them with a black and white sensor."
+        "detailedText3": ". Indeed, the latter makes it possible to find the shortest path. The streets of the city were represented by black lines and the car could follow them with a black and white sensor."
       },
       "studentAssociationWebsite": {
-        "clickMe":"Click here to see some screenshots of the project",
+        "clickMe": "Click here to see some screenshots of the project",
         "title": "Student Association Website",
         "dates": "2 weeks - November 2019",
         "text": "Designed a website with user and event management, as well as an online store, for the school's student association.",
@@ -156,7 +170,7 @@
     "phoneNumber": "PHONE NUMBER",
     "message": "MESSAGE *",
     "sendIt": "Send it!",
-    "thankYou":"Thank you for your message! 😁",
+    "thankYou": "Thank you for your message! 😁",
     "goBack": "Go back"
   },
   "notFound": {

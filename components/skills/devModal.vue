@@ -1,19 +1,30 @@
 <template>
   <el-collapse v-model="activeNames">
-    <!-- PROGRAMMING LANGUAGES -->
+    <!-- LANGUAGES -->
     <el-collapse-item name="1">
       <template slot="title">
-        {{ $t("skills.modal.programmingLanguages") }}
+        {{ $t("skills.modal.languages") }}
       </template>
-      <!-- C# -->
+      <!-- Javascript -->
       <div class="devModalRow">
         <img
-          src="../../assets/c-sharp_logo.svg"
-          alt="C# logo"
-          class="object-contain w-12 svg-shadow-little"
+          src="../../assets/javascript_logo.svg"
+          alt="JavaScript logo"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.c#") }}
+          {{ $t("skills.modal.js") }}
+        </p>
+      </div>
+      <!-- TypeScript -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/typescript_logo.svg"
+          alt="TypeScript logo"
+          class="w-12 p-1"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.ts") }}
         </p>
       </div>
       <!-- Java -->
@@ -21,21 +32,32 @@
         <img
           src="../../assets/java_logo.svg"
           alt="Java logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.java") }}
         </p>
       </div>
-      <!-- Language C -->
+      <!-- C# -->
       <div class="devModalRow">
         <img
-          src="../../assets/c_logo.svg"
-          alt="C logo"
-          class="w-12 p-1 svg-shadow-little"
+          src="../../assets/c-sharp_logo.svg"
+          alt="C# logo"
+          class="object-contain w-12"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.c") }}
+          {{ $t("skills.modal.c#") }}
+        </p>
+      </div>
+      <!-- GraphQL -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/graphql_logo.svg"
+          alt="GraphQL logo"
+          class="w-12 p-1"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.graphql") }}
         </p>
       </div>
       <!-- Python -->
@@ -43,7 +65,7 @@
         <img
           src="../../assets/python_logo.svg"
           alt="Python logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.python") }}
@@ -54,7 +76,7 @@
         <img
           src="../../assets/arduino_logo_2.svg"
           alt="Arduino logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.arduino") }}
@@ -65,86 +87,50 @@
         <img
           src="../../assets/swift_logo.svg"
           alt="Swift logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.swift") }}
         </p>
       </div>
-    </el-collapse-item>
-    <!-- UI Frameworks -->
-    <el-collapse-item name="2">
-      <template slot="title">
-        {{ $t("skills.modal.UIFrameworks") }}
-      </template>
-      <!-- JavaFx -->
+      <!-- Language C -->
       <div class="devModalRow">
-        <img
-          src="../../assets/javafx_logo.svg"
-          alt="VS Code logo"
-          class="w-12 svg-shadow-little"
-        />
+        <img src="../../assets/c_logo.svg" alt="C logo" class="w-12 p-1" />
         <p class="devModalRowText">
-          {{ $t("skills.modal.javafx") }}
-        </p>
-      </div>
-      <!-- WPF -->
-      <div class="devModalRow">
-        <img
-          src="../../assets/wpf_logo.png"
-          alt="WPF logo"
-          class="w-12 p-1 svg-shadow-little"
-        />
-        <p class="devModalRowText">
-          {{ $t("skills.modal.wpf") }}
+          {{ $t("skills.modal.c") }}
         </p>
       </div>
     </el-collapse-item>
-    <!-- WEB DEVELOPMENT -->
-    <el-collapse-item title="Web Development" name="3">
+    <!-- Frameworks and libraries -->
+    <el-collapse-item title="Frameworks and libraries" name="2">
       <template slot="title">
-        {{ $t("skills.modal.webDevelopment") }}
+        {{ $t("skills.modal.frameworksAndLibraries") }}
       </template>
-      <!-- HTML -->
+      <!-- React -->
       <div class="devModalRow">
         <img
-          src="../../assets/html_logo.svg"
-          alt="HTML logo"
-          class="w-12 svg-shadow-little"
+          src="../../assets/react_logo.svg"
+          alt="React logo"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.html") }}
+          {{ $t("skills.modal.react") }}
         </p>
       </div>
-      <!-- CSS -->
+      <!-- Next.JS -->
       <div class="devModalRow">
         <img
-          src="../../assets/css_logo.svg"
-          alt="CSS logo"
-          class="w-12 p-1.5 svg-shadow-little"
+          src="../../assets/nextjs_logo.svg"
+          alt="Next.js logo"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.css") }}
-        </p>
-      </div>
-      <!-- Javascript -->
-      <div class="devModalRow">
-        <img
-          src="../../assets/javascript_logo.svg"
-          alt="JS logo"
-          class="w-12 p-1 svg-shadow-little"
-        />
-        <p class="devModalRowText">
-          {{ $t("skills.modal.js") }}
+          {{ $t("skills.modal.nextjs") }}
         </p>
       </div>
       <!-- Vue.Js -->
       <div class="devModalRow">
-        <img
-          src="../../assets/vue_logo.svg"
-          alt="Vue logo"
-          class="w-12 p-1 svg-shadow-little"
-        />
+        <img src="../../assets/vue_logo.svg" alt="Vue logo" class="w-12 p-1" />
         <p class="devModalRowText">
           {{ $t("skills.modal.vuejs") }}
         </p>
@@ -154,7 +140,7 @@
         <img
           src="../../assets/nuxt_logo.svg"
           alt="Nuxt logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.nuxtjs") }}
@@ -165,7 +151,7 @@
         <img
           src="../../assets/angular_logo.svg"
           alt="Angular logo"
-          class="w-12 svg-shadow-little"
+          class="w-12"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.angular") }}
@@ -176,7 +162,7 @@
         <img
           src="../../assets/laravel_logo.svg"
           alt="Laravel logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.laravel") }}
@@ -187,49 +173,73 @@
         <img
           src="../../assets/tailwindcss_logo.svg"
           alt="TailwindCSS logo"
-          class="w-12 p-1 svg-shadow-little"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.tailwind") }}
         </p>
       </div>
+      <!-- Apollo -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/apollo_logo.svg"
+          alt="Apollo logo"
+          class="w-12 p-1"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.apollo") }}
+        </p>
+      </div>
     </el-collapse-item>
-    <!-- DEVELOPMENT TOOLS -->
-    <el-collapse-item title="Development tools" name="4">
+    <!-- ORMS -->
+    <el-collapse-item name="3">
       <template slot="title">
-        {{ $t("skills.modal.developmentTools") }}
+        {{ $t("skills.modal.orms") }}
       </template>
-      <!-- VS CODE -->
+      <!-- Prisma -->
       <div class="devModalRow">
         <img
-          src="../../assets/vs_code_logo.png"
-          alt="VS Code logo"
-          class="w-12 svg-shadow-little"
+          src="../../assets/prisma_logo2.svg"
+          alt="Prisma logo"
+          class="w-12 p-1.5"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.vscode") }}
+          {{ $t("skills.modal.prisma") }}
         </p>
       </div>
-      <!-- VS Studio 2019 -->
+      <!-- Mongoose -->
       <div class="devModalRow">
         <img
-          src="../../assets/vs_logo.png"
-          alt="VS Studio 2019 logo"
-          class="w-12 svg-shadow-little"
+          src="../../assets/mongoose_logo.svg"
+          alt="Mongoose logo"
+          class="w-12 p-1"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.vs") }}
+          {{ $t("skills.modal.mongoose") }}
         </p>
       </div>
-      <!-- Intellij -->
+    </el-collapse-item>
+    <!-- UI Frameworks -->
+    <el-collapse-item name="4">
+      <template slot="title">
+        {{ $t("skills.modal.UIFrameworks") }}
+      </template>
+      <!-- JavaFx -->
       <div class="devModalRow">
         <img
-          src="../../assets/intellij_logo.png"
-          alt="Intellij logo"
-          class="w-12 svg-shadow-little"
+          src="../../assets/javafx_logo.svg"
+          alt="JavaFx logo"
+          class="w-12"
         />
         <p class="devModalRowText">
-          {{ $t("skills.modal.intellij") }}
+          {{ $t("skills.modal.javafx") }}
+        </p>
+      </div>
+      <!-- WPF -->
+      <div class="devModalRow">
+        <img src="../../assets/wpf_logo.png" alt="WPF logo" class="w-12 p-1" />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.wpf") }}
         </p>
       </div>
     </el-collapse-item>
@@ -238,12 +248,45 @@
       <template slot="title">
         {{ $t("skills.modal.CI/CD") }}
       </template>
+      <!-- GitHub Actions -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/githubactions_logo.svg"
+          alt="GitHub Actions logo"
+          class="w-12 p-1.5"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.githubActions") }}
+        </p>
+      </div>
+      <!-- Google Cloud Build -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/google_cloud_build_logo.svg"
+          alt="Google Cloud Build logo"
+          class="w-12 p-1.5"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.googleCloudBuild") }}
+        </p>
+      </div>
+      <!-- ArgoCD -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/argocd_logo.svg"
+          alt="Argo CD logo"
+          class="w-12 p-1.5"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.argocd") }}
+        </p>
+      </div>
       <!-- Azure Pipeline -->
       <div class="devModalRow">
         <img
           src="../../assets/azure_logo.svg"
           alt="Azure logo"
-          class="w-12 p-1.5 svg-shadow-little"
+          class="w-12 p-1.5"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.azure") }}
@@ -254,7 +297,7 @@
         <img
           src="../../assets/jenkins_logo.svg"
           alt="Jenkins logo"
-          class="w-12 p-1.5 svg-shadow-little"
+          class="w-12 p-1.5"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.jenkins") }}
@@ -265,10 +308,105 @@
         <img
           src="../../assets/teamcity_logo.svg"
           alt="TeamCity logo"
-          class="w-12 p-0.5 svg-shadow-little"
+          class="w-12 p-0.5"
         />
         <p class="devModalRowText">
           {{ $t("skills.modal.teamcity") }}
+        </p>
+      </div>
+    </el-collapse-item>
+    <!-- CONTAINERIZATION -->
+    <el-collapse-item title="Containerization" name="6">
+      <template slot="title">
+        {{ $t("skills.modal.containerization") }}
+      </template>
+      <!-- Docker -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/docker_logo.svg"
+          alt="Docker logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.docker") }}
+        </p>
+      </div>
+      <!-- Docker Compose -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/dockerCompose_logo.png"
+          alt="Docker Compose logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.dockerCompose") }}
+        </p>
+      </div>
+      <!-- Kubernetes -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/kubernetes_logo.svg"
+          alt="Kubernetes logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.kubernetes") }}
+        </p>
+      </div>
+    </el-collapse-item>
+    <!-- Cloud platforms -->
+    <el-collapse-item name="7">
+      <template slot="title">
+        {{ $t("skills.modal.cloudPlatforms") }}
+      </template>
+      <!-- Google Cloud Platform -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/googlecloud_logo2.svg"
+          alt="Google Cloud logo"
+          class="w-12 p-1"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.googleCloudPlatform") }}
+        </p>
+      </div>
+    </el-collapse-item>
+    <!-- DEVELOPMENT TOOLS -->
+    <el-collapse-item title="Development tools" name="8">
+      <template slot="title">
+        {{ $t("skills.modal.developmentTools") }}
+      </template>
+      <!-- VS CODE -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/vs_code_logo.png"
+          alt="VS Code logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.vscode") }}
+        </p>
+      </div>
+      <!-- VS Studio 2019 -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/vs_logo.png"
+          alt="VS Studio 2019 logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.vs") }}
+        </p>
+      </div>
+      <!-- Intellij -->
+      <div class="devModalRow">
+        <img
+          src="../../assets/intellij_logo.png"
+          alt="Intellij logo"
+          class="w-12"
+        />
+        <p class="devModalRowText">
+          {{ $t("skills.modal.intellij") }}
         </p>
       </div>
     </el-collapse-item>
@@ -277,10 +415,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      activeNames: ["1"]
-    };
-  }
+  props: {
+    activeNames: {
+      type: Number,
+      default: () => 1,
+    },
+  },
 };
 </script>

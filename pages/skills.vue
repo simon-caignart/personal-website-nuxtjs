@@ -4,25 +4,25 @@
     class="bg-gradient-to-r from-orange to-yellow-400 min-h-full overflow-hidden"
   >
     <NavBar :nav-bar-title="title" />
-    <devRow></devRow>
-    <netdockRow></netdockRow>
-    <creationRow></creationRow>
+    <langOrmRow></langOrmRow>
+    <frameworkContainerRow></frameworkContainerRow>
+    <cicdCloudRow></cicdCloudRow>
   </div>
 </template>
 
 <script>
 import NavBar from "../components/NavBar.vue";
-import devRow from "../components/skills/devRow.vue";
-import creationRow from "../components/skills/creationRow.vue";
-import netdockRow from "../components/skills/netdockRow.vue";
+import langOrmRow from "../components/skills/langOrmRow.vue";
+import cicdCloudRow from "../components/skills/cicdCloudRow.vue";
+import frameworkContainerRow from "../components/skills/frameworkContainerRow.vue";
 export default {
-  components: { devRow, creationRow, netdockRow, NavBar },
+  components: { langOrmRow, cicdCloudRow, frameworkContainerRow, NavBar },
   data() {
     return {
       title: this.$t("home.skills"),
       metaTitle: "Simon Caignart | Skills",
       description:
-        "Development of all kinds of software as well as websites. I am passionate about building excellent software that improves the lives of those around me"
+        "I am passionate about building excellent software that improves the lives of those around me"
     };
   },
   head() {

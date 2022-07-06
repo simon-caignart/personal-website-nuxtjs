@@ -6,39 +6,38 @@
     "contact": "Contact"
   },
   "skills": {
-    "development": {
+    "languages": {
       "clickHere": "Cliquez ici pour plus de détails",
-      "title": "Développement",
-      "softwareEngineer": "Ingénieur logiciel",
-      "text1": "Développement de tous types de logiciels ainsi que de sites webs.",
-      "text2": "Je suis passionné par la création d'excellents logiciels qui améliorent la vie de ceux qui m'entourent, développant à partir de zéro et la concrétisation d'idées."
+      "title": "Langages",
+      "text1": "Je suis passionné par la création de software qui améliore la vie de ceux qui m'entourent, développant à partir de zéro afin de réaliser de grandes choses.",
+      "text2": "Vous pouvez voir les langages de mon tech stack à côté de ce bloc. N'hésitez pas à cliquer sur les 3 petits points pour en découvrir encore plus !"
     },
-    "databases": {
-      "title": "Bases de données",
-      "text": "Gestion de bases de données SQL et NoSQL."
+    "orms": {
+      "title": "ORMs",
+      "text": "J'utilise principalement les ORM Prisma et Mongoose."
     },
     "containerization": {
       "title": "Conteneurisation",
       "text1": "Conteneurisation d'applications avec docker et docker compose.",
       "text2": "Je peux également créer, configurer et gérer un système Kubernetes, depuis la création du cluster jusqu'à la configuration de l'ingress."
     },
-    "network": {
-      "title": "Réseau",
-      "text1": "Je peux configurer un réseau et le sécuriser avec un proxy, un VPN, un pare-feu, une zone démilitarisée, etc.",
-      "text2": "Je peux également configurer un service Active Directory et le gérer."
+    "frameworks": {
+      "title": "Frameworks et Bibliothèques",
+      "text1": "Vous trouverez dans le bloc suivant les frameworks et bibliothèques que j'utilise principalement.",
+      "text2": "J'adore travailler avec React et Tailwind CSS pour le développement du frontend. Pour le backend, j'aime utiliser GraphQL avec la plateforme Apollo."
     },
-    "adobe": {
-      "title": "Adobe",
-      "text": "Je possède un niveau intermédiaire sur Photoshop, Premiere Pro, InDesign et Illustrator."
+    "ci/cd": {
+      "title": "CI/CD",
+      "text": "Je fais de l'intégration continue principalement avec GitHub Actions. En ce qui concerne le déploiement continu, j'aime utiliser Argo CD, afin de déployer des microservices directement dans Kubernetes, en suivant la méthode GitOps."
     },
-    "office": {
-      "title": "Office",
-      "text": "J'utilise la suite Office tous les jours pour mes études, c'est pourquoi je maîtrise les principales applications, Word, PowerPoint, Excel, Visio."
+    "cloud": {
+      "title": "Cloud",
+      "text": "J'ai utilisé la plateforme Google Cloud pour mon projet de plateforme web. L'architecture microservices était hébergée sur Kubernetes Engine. Nous avons utilisé Artifact Registry pour stocker nos images docker, ainsi que Cloud Storage pour le contenu dynamique de la plateforme (images)."
     },
     "modal": {
-      "programmingLanguages": "Langages de programmation",
+      "languages": "Langages",
       "UIFrameworks": "Frameworks UI",
-      "webDevelopment": "Développement web",
+      "frameworksAndLibraries": "Frameworks et bibliothèques",
       "developmentTools": "Outils de développement",
       "CI/CD": "CI/CD",
       "c#": "C#. J'ai réalisé un projet scolaire en C#, je l'ai également utilisé avec ASP.NET pour créer des API. Enfin, j'ai travaillé en tant que freelance sur du C#.",
@@ -47,22 +46,37 @@
       "python": "Python. J'ai travaillé avec Python principalement pour produire des algorithmes heuristiques et méta-heuristiques afin de résoudre certains problèmes NP-Difficile, comme le VRP.",
       "arduino": "Arduino. Je l'ai beaucoup utilisé à l'école pour deux projets mélant programmation et robotique.",
       "swift": "Swift. Je l'ai découvert en développant une application IOS.",
+      "graphql": "GraphQL. J'ai utilisé ce langage de requête pour toutes les API de mon projet d'entrepreneuriat.",
+      "apollo": "Apollo. J'ai utilisé cette plateforme pour créer les serveurs GraphQL de tous les microservices de mon projet d'entrepreneuriat. J'ai également utilisé Apollo Federation pour avoir un point d'entrée unique et Apollo Client pour interroger le backend depuis les applications frontend.",
       "javafx": "JavaFx. je l'ai utilisé pour un projet complet lors d'un stage de quatre mois.",
       "wpf": "WPF. Je l'ai utilisé WPF lors d'un projet scolaire pour créer un gestionnaire de sauvegarde de fichiers.",
-      "html": "HTML. Je l'ai utilisé dans divers projets web.",
-      "css": "CSS. Je l'ai utilisé dans divers projets web.",
-      "js": "Javascript. Je l'ai utilisé dans divers projets web.",
+      "js": "JavaScript. Je l'ai utilisé dans de nombreux projets web.",
+      "ts": "TypeScript. J'utilise maintenant TypeScript aussi souvent que possible au lieu de JavaSript, pour le développement du frontend et du backend.",
+      "react": "React. Je l'ai utilisé pour les frontends de mon projet d'entrepreneuriat.",
+      "nextjs": "Next.js. J'ai utilisé ce framework au dessus de React pour les frontends de mon projet d'entreprenariat.",
       "vuejs": "Vue JS. J'ai initialement développé ce site web en utilisant ce framework Javascript.",
       "nuxtjs": "Nuxt JS. J'ai migré la première version de ce site web vers Nuxt JS.",
       "angular": "Angular. J'ai créé un site web pour le back-office d'une application orientée microservices.",
       "laravel": "Laravel. J'ai utilisé ce framework lors d'un projet scolaire consistant en la création d'un site web avec gestion des utilisateurs et d'une boutique en ligne.",
-      "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement.",
+      "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement, ainsi que dans d'autres projets.",
       "vscode": "Visual Studio Code. C'est mon IDE principal, je l'utilise essentiellement pour les projets web.",
       "vs": "Visual Studio. L'IDE avec lequel je choisis de travailler lorsqu'il s'agit de développement C#, ASP.NET, WPF.",
       "intellij": "Intellij. L'IDE que je choisis pour travailler avec Java et JavaFx.",
-      "azure" : "Azure Pipelines. Je l'ai utilisé pour l'intégration continue de services ASP.NET et pour une application WPF.",
-      "jenkins" : "Jenkins. J'ai utilisé Jenkins pour une application Java.",
-      "teamcity" : "TeamCity. Je l'ai utilisé pour le CI d'une application JavaFx et d'une application Angular."
+      "githubActions": "GitHub Actions. J'utilise cet outil pour l'intégration continue de tous mes projets.",
+      "googleCloudBuild": "Google Cloud Build. J'ai utilisé ce service google cloud pour la livraison continue de mon projet d'entrepreneuriat.",
+      "argocd": "ArgoCD. Je l'ai utilisé pour le déploiement continu des microservices de mon projet d'entrepreneuriat dans un environnement Kubernetes.",
+      "azure": "Azure Pipelines. Je l'ai utilisé pour l'intégration continue de services ASP.NET et pour une application WPF.",
+      "jenkins": "Jenkins. J'ai utilisé Jenkins pour l'intégration continue d'une application Java.",
+      "teamcity": "TeamCity. Je l'ai utilisé pour le CI d'une application JavaFx et d'une application Angular.",
+      "cloudPlatforms": "Plateformes Cloud",
+      "googleCloudPlatform": "Google Cloud Platform. J'ai utilisé la plateforme cloud de Google pour héberger une application orientée microservices (10 services) avec Google Kubernetes Engine. Pour stocker les images docker de ces services, j'ai utilisé Google Artifact Registry. J'ai également utilisé la plateforme CI/CD Google Cloud Build. Enfin, j'ai utilisé Google Cloud Storage pour stocker les images à afficher sur le frontend.",
+      "orms": "ORMs",
+      "prisma": "Prisma. J'ai utilisé cet ORM pour les services backend de mon projet d'entrepreneuriat.",
+      "mongoose": "Mongoose. Je l'ai utilisé pour des projets scolaires.",
+      "containerization": "Conteneurisation",
+      "docker": "Docker. Je l'utilise tous les jours pour le développement.",
+      "dockerCompose": "Docker Compose. Je l'ai utilisé dans divers projets pour gérer plusieurs conteneurs à la fois.",
+      "kubernetes": "Kubernetes. J'ai utilisé Kubernetes durant un stage ainsi que pour mon projet d'entrepreneuriat."
     }
   },
   "experiences": {
@@ -87,37 +101,36 @@
       "eixa6": {
         "title": "Eixa6 Informatique",
         "dates": "Janvier → Avril 2021",
-        "detailedDates":"4 Janvier → 16 Avril 2021",
+        "detailedDates": "4 Janvier → 16 Avril 2021",
         "text": "Création d'une application orientée microservices, destinée à la gestion des missions et des clients de l'entreprise.",
-        "detailedText":"Durant ce stage qui a duré 4 mois, j'ai développé une application orientée microservices permettant la gestion des missions et des clients de l'entreprise. Les différents services de l'application étaient hébergés sur un cluster de quatre Raspberry Pi 4, chacun exécutant Kubernetes. Tous ces services étaient des APIs Web ASP.NET, utilisant des bases de données MongoDB. Pour le front-end, le client de bureau a été réalisé avec JavaFx, et l'application web du back-office avec Angular. La sécurité de cette application a été gérée avec des tokens JWT et un service d'authentification."
+        "detailedText": "Durant ce stage qui a duré 4 mois, j'ai développé une application orientée microservices permettant la gestion des missions et des clients de l'entreprise. Les différents services de l'application étaient hébergés sur un cluster de quatre Raspberry Pi 4, chacun exécutant Kubernetes. Tous ces services étaient des APIs Web ASP.NET, utilisant des bases de données MongoDB. Pour le front-end, le client de bureau a été réalisé avec JavaFx, et l'application web du back-office avec Angular. La sécurité de cette application a été gérée avec des tokens JWT et un service d'authentification."
       },
       "cgr": {
         "title": "CGR Cinémas",
         "dates": "Mars → Juillet 2020",
-        "detailedDates":"30 Mars → 31 Juillet 2020",
+        "detailedDates": "30 Mars → 31 Juillet 2020",
         "text": "Développement d'un nouveau logiciel interne permettant de gérer tous les écrans des cinémas (Acceuil, Extérieur, Entrée etc).",
         "detailedText": "Ce stage, qui a duré 10 semaines, a été effectué au siège de la société CGR Cinémas, situé à Périgny. Depuis plusieurs années, le groupe CGR Cinémas dispose d'une équipe de programmeurs chargée du développement et de la maintenance d'une suite logicielle, utilisée dans les cinémas et au siège. Cette suite comprend un logiciel d'affichage et de gestion ( dans les cinémas et au siège ). Ce stage s'inscrivait dans le cadre des travaux régulièrement mis en œuvre pour améliorer l'existant et faciliter le travail des utilisateurs finaux. Mon travail a donc consisté en la refonte du logiciel de gestion d'affichage, qui s'appelle désormais \"EasyCiné Display\". Ma production est maintenant utilisé dans chacun des 71 cinémas du groupe, on peut le voir en action sur les écrans des halls d'entrée, des entrées en salle, des extérieurs, etc."
       }
     },
     "schoolProjects": {
-      "title":"Projets d'école",
+      "title": "Projets d'école",
       "autonomousCar": {
         "title": "Prototype d'une voiture autonome",
         "dates": "Juin 2019",
         "text": "Création d'un prototype de voiture autonome (échelle 1:18) capable de se déplacer dans une ville et de rechercher les places de stationnement disponibles.",
         "detailedText1": "L'objectif de ce projet était de créer un prototype de voiture autonome capable de se déplacer dans une ville et de rechercher des places de parking disponibles. Le composant principal était un arduino, contrôlant tout, des moteurs aux capteurs. Nous avons également créé une interface avec Java et Swing pour afficher la position de la voiture et les places de parking disponibles en temps réel. La voiture communiquait sa position à l'ordinateur via un émetteur radio.",
-        "detailedText2":"Le chemin parcouru par la voiture a été calculé grâce à l'algorithme de ",
+        "detailedText2": "Le chemin parcouru par la voiture a été calculé grâce à l'algorithme de ",
         "dijkstra": "Dijkstra",
-        "detailedText3":". En effet, ce dernier permet de trouver le chemin le plus court. Les rues de la ville étaient représentées par des lignes noires et la voiture pouvait les suivre grâce à un capteur noir et blanc."
+        "detailedText3": ". En effet, ce dernier permet de trouver le chemin le plus court. Les rues de la ville étaient représentées par des lignes noires et la voiture pouvait les suivre grâce à un capteur noir et blanc."
       },
       "studentAssociationWebsite": {
-        "clickMe":"Cliquez ici pour voir quelques captures d'écran du projet",
+        "clickMe": "Cliquez ici pour voir quelques captures d'écran du projet",
         "title": "Site web pour l'association étudiante",
         "dates": "2 semaines - Novembre 2019",
         "text": "Conception d'un site web avec une gestion des utilisateurs, des événements, et une boutique en ligne, pour l'association étudiantes de l'école.",
         "detailedText_before": "L'objectif de ce projet d'école était de créer un site internet pour l'association étudiante (BDE), permettant la gestion d'événements et une boutique en ligne. Ce site devait également proposer un système de gestion des utilisateurs, avec des rôles, afin que seules certaines personnes puissent modifier, supprimer et créer des événements, ajouter des produits, etc.",
         "detailedText_after": "Nous avons développé ce site web en utilisant le framework PHP Laravel. Pour la base de données, nous avons utilisé MySQL."
-      
       }
     },
     "personalProjects": {
@@ -157,7 +170,7 @@
     "phoneNumber": "NUMÉRO DE TÉLÉPHONE",
     "message": "MESSAGE *",
     "sendIt": "Envoyer !",
-    "thankYou":"Merci pour votre message ! 😁",
+    "thankYou": "Merci pour votre message ! 😁",
     "goBack": "Retour en arrière"
   },
   "notFound": {

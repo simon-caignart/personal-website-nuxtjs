@@ -1,9 +1,10 @@
 <template>
   <div class="skillsRow">
     <el-dialog :visible.sync="dialogDevVisible">
-      <dev-modal></dev-modal>
+      <dev-modal activeNames="1"></dev-modal>
     </el-dialog>
 
+    <!-- Languages -->
     <div
       class="skillCard"
       data-aos="zoom-in-right"
@@ -11,13 +12,12 @@
       data-aos-once="true"
       data-aos-offset="-1000"
     >
-      <h1 class="skillCardTitle">{{ $t("skills.development.title") }}</h1>
+      <h1 class="skillCardTitle">{{ $t("skills.languages.title") }}</h1>
       <br />
-      <h2 class="text-2xl">{{ $t("skills.development.softwareEngineer") }}</h2>
       <br />
       <p class="skillCardParagraph">
-        {{ $t("skills.development.text1") }} <br><br>
-        {{ $t("skills.development.text2") }}
+        {{ $t("skills.languages.text1") }} <br /><br />
+        {{ $t("skills.languages.text2") }}
       </p>
     </div>
 
@@ -28,19 +28,28 @@
       data-aos-once="true"
       data-aos-offset="-1000"
     >
-      <img
-        src="../../assets/c-sharp_logo.svg"
-        alt="C# Logo"
-        height="75px"
-        width="75px"
-        class="skillLogo svg-shadow-little"
-      />
+      <el-tooltip content="TypeScript" placement="bottom">
+        <img
+          src="../../assets/typescript_logo.svg"
+          alt="TypeScript Logo"
+          height="75px"
+          width="75px"
+          class="skillLogo"
+        />
+      </el-tooltip>
       <img
         src="../../assets/java_logo.svg"
         alt="Java Logo"
         height="60px"
         width="60px"
-        class="skillLogo svg-shadow-little"
+        class="skillLogo"
+      />
+      <img
+        src="../../assets/c-sharp_logo.svg"
+        alt="C# Logo"
+        height="75px"
+        width="75px"
+        class="skillLogo"
       />
       <el-tooltip content="Python" placement="bottom">
         <img
@@ -48,29 +57,20 @@
           alt="Python logo"
           height="75px"
           width="75px"
-          class="skillLogo svg-shadow-little"
+          class="skillLogo"
         />
       </el-tooltip>
-      <el-tooltip content="Arduino" placement="bottom">
+      <el-tooltip content="GraphQL" placement="bottom">
         <img
-          src="../../assets/arduino_logo_2.svg"
-          alt="Arduino Logo"
-          height="75px"
-          width="75px"
-          class="skillLogo svg-shadow-little"
-        />
-      </el-tooltip>
-      <el-tooltip content="JavaScript" placement="bottom">
-        <img
-          src="../../assets/javascript_logo.svg"
+          src="../../assets/graphql_logo.svg"
           alt="JS logo"
           height="75px"
           width="75px"
-          class="skillLogo svg-shadow-little"
+          class="skillLogo"
         />
       </el-tooltip>
       <el-tooltip placement="bottom">
-        <p slot="content">{{ $t("skills.development.clickHere") }}</p>
+        <p slot="content">{{ $t("skills.languages.clickHere") }}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -79,7 +79,7 @@
           x="0px"
           y="0px"
           @click="dialogDevVisible = true"
-          class="cursor-pointer skillLogo w-12 pt-2 fill-current h-16 text-gray-300 dark:text-gray-500 svg-shadow-little"
+          class="cursor-pointer skillLogo w-12 pt-2 fill-current h-16 text-gray-300 dark:text-gray-500"
           xml:space="preserve"
           viewBox="0 170.67 426.67 85.33"
         >
@@ -116,7 +116,7 @@
       ></el-tooltip>
     </div>
 
-    <!-- Database -->
+    <!-- ORMs -->
     <div class="flex flex-col md:mb-0 md:w-1/3">
       <div
         class="skillCard mr-0 mb-0"
@@ -125,10 +125,10 @@
         data-aos-once="true"
         data-aos-offset="-1000"
       >
-        <h1 class="skillCardTitle">{{ $t("skills.databases.title") }}</h1>
+        <h1 class="skillCardTitle">{{ $t("skills.orms.title") }}</h1>
         <br />
         <p class="skillCardParagraph">
-          {{ $t("skills.databases.text") }}
+          {{ $t("skills.orms.text") }}
         </p>
       </div>
       <div
@@ -140,16 +140,16 @@
       >
         <div class="w-full xl:w-1/2">
           <img
-            src="../../assets/mysql_logo.svg"
-            alt="MySql logo"
-            class="object-contain h-24 xl:pr-12 w-full svg-shadow-little transform hover:scale-110 transition duration-500"
+            src="../../assets/prisma_logo.svg"
+            alt="Prisma logo"
+            class="object-contain fill-current h-20 text-gray-300 dark:text-gray-500 xl:pr-12 w-full transform hover:scale-110 transition duration-500"
           />
         </div>
         <div class="w-full xl:w-1/2">
           <img
-            src="../../assets/mongodb_logo.svg"
-            alt="MongoDB logo"
-            class="object-contain h-24 xl:pr-5 w-full svg-shadow-little transform hover:scale-110 transition duration-500"
+            src="../../assets/mongoose_logo.svg"
+            alt="Mongoose logo"
+            class="object-contain h-16 xl:pr-5 w-full transform hover:scale-110 transition duration-500"
           />
         </div>
       </div>

@@ -43,11 +43,11 @@
 }
 
 .skillsInlineRow {
-  @apply flex-1 flex md:flex-row;
+  @apply flex flex-col md:flex-row mt-4 md:mt-0 md:mr-4;
 }
 
 .skillCardTitle {
-  @apply text-3xl xl:text-4xl truncate font-medium;
+  @apply text-2xl md:text-3xl xl:text-4xl truncate font-medium;
 }
 
 .skillCardParagraph {
@@ -58,12 +58,20 @@
   @apply flex-1 bg-white dark:bg-gray-800  dark:text-gray-300 rounded-xlg p-8 mb-0;
 }
 
+.oneLogoCard {
+  @apply bg-white dark:bg-gray-800 min-w-skillsBar rounded-xlg p-8 mb-0 mt-4 md:mt-0 grid grid-flow-col grid-cols-1 grid-rows-1;
+}
+
 .twoLogosCard {
   @apply bg-white dark:bg-gray-800 min-w-skillsBar rounded-xlg p-8 mb-0 mt-4 md:mt-0 grid grid-flow-col grid-cols-2 grid-rows-1 md:grid-cols-1 md:grid-rows-2 gap-4;
 }
 
 .twoLogosRowCard {
-  @apply flex flex-col xl:flex-row items-center bg-white dark:bg-gray-800 rounded-xlg p-8 mt-4;
+  @apply flex flex-col space-y-2 xl:flex-row items-center bg-white dark:bg-gray-800 rounded-xlg p-8 mt-4;
+}
+
+.threeLogosCard {
+  @apply grid grid-flow-col grid-cols-2 grid-rows-2 gap-4 items-center bg-white dark:bg-gray-800 rounded-xlg p-8 my-4 md:my-0 md:ml-4;
 }
 
 .fourLogosCard {
