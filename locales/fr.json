@@ -24,7 +24,7 @@
     "frameworks": {
       "title": "Frameworks et Bibliothèques",
       "text1": "Vous trouverez dans le bloc suivant les frameworks et bibliothèques que j'utilise principalement.",
-      "text2": "J'adore travailler avec React et Tailwind CSS pour le développement du frontend. Pour le backend, j'aime utiliser GraphQL avec la plateforme Apollo."
+      "text2": "J'adore travailler avec React et Tailwind CSS pour le développement du front-end. Pour le back-end, j'aime utiliser GraphQL avec la plateforme Apollo."
     },
     "ci/cd": {
       "title": "CI/CD",
@@ -47,16 +47,16 @@
       "arduino": "Arduino. Je l'ai beaucoup utilisé à l'école pour deux projets mélant programmation et robotique.",
       "swift": "Swift. Je l'ai découvert en développant une application IOS.",
       "graphql": "GraphQL. J'ai utilisé ce langage de requête pour toutes les API de mon projet d'entrepreneuriat.",
-      "apollo": "Apollo. J'ai utilisé cette plateforme pour créer les serveurs GraphQL de tous les microservices de mon projet d'entrepreneuriat. J'ai également utilisé Apollo Federation pour avoir un point d'entrée unique et Apollo Client pour interroger le backend depuis les applications frontend.",
+      "apollo": "Apollo. J'ai utilisé cette plateforme pour créer les serveurs GraphQL de tous les microservices de mon projet d'entrepreneuriat. J'ai également utilisé Apollo Federation pour avoir un point d'entrée unique et Apollo Client pour interroger le back-end depuis les applications front-end.",
       "javafx": "JavaFx. je l'ai utilisé pour un projet complet lors d'un stage de quatre mois.",
       "wpf": "WPF. Je l'ai utilisé WPF lors d'un projet scolaire pour créer un gestionnaire de sauvegarde de fichiers.",
       "js": "JavaScript. Je l'ai utilisé dans de nombreux projets web.",
-      "ts": "TypeScript. J'utilise maintenant TypeScript aussi souvent que possible au lieu de JavaSript, pour le développement du frontend et du backend.",
-      "react": "React. Je l'ai utilisé pour les frontends de mon projet d'entrepreneuriat.",
-      "nextjs": "Next.js. J'ai utilisé ce framework au dessus de React pour les frontends de mon projet d'entreprenariat.",
+      "ts": "TypeScript. J'utilise maintenant TypeScript aussi souvent que possible au lieu de JavaSript, pour le développement du front-end et du back-end.",
+      "react": "React. Je l'ai utilisé pour les front-ends de mon projet d'entrepreneuriat.",
+      "nextjs": "Next.js. J'ai utilisé ce framework au dessus de React pour les front-ends de mon projet d'entreprenariat.",
       "vuejs": "Vue JS. J'ai initialement développé ce site web en utilisant ce framework Javascript.",
       "nuxtjs": "Nuxt JS. J'ai migré la première version de ce site web vers Nuxt JS.",
-      "angular": "Angular. J'ai créé un site web pour le back-office d'une application orientée microservices.",
+      "angular": "Angular. J'ai créé un site web pour le back office d'une application orientée microservices.",
       "laravel": "Laravel. J'ai utilisé ce framework lors d'un projet scolaire consistant en la création d'un site web avec gestion des utilisateurs et d'une boutique en ligne.",
       "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement, ainsi que dans d'autres projets.",
       "vscode": "Visual Studio Code. C'est mon IDE principal, je l'utilise essentiellement pour les projets web.",
@@ -69,9 +69,9 @@
       "jenkins": "Jenkins. J'ai utilisé Jenkins pour l'intégration continue d'une application Java.",
       "teamcity": "TeamCity. Je l'ai utilisé pour le CI d'une application JavaFx et d'une application Angular.",
       "cloudPlatforms": "Plateformes Cloud",
-      "googleCloudPlatform": "Google Cloud Platform. J'ai utilisé la plateforme cloud de Google pour héberger une application orientée microservices (10 services) avec Google Kubernetes Engine. Pour stocker les images docker de ces services, j'ai utilisé Google Artifact Registry. J'ai également utilisé la plateforme CI/CD Google Cloud Build. Enfin, j'ai utilisé Google Cloud Storage pour stocker les images à afficher sur le frontend.",
+      "googleCloudPlatform": "Google Cloud Platform. J'ai utilisé la plateforme cloud de Google pour héberger une application orientée microservices (10 services) avec Google Kubernetes Engine. Pour stocker les images docker de ces services, j'ai utilisé Google Artifact Registry. J'ai également utilisé la plateforme CI/CD Google Cloud Build. Enfin, j'ai utilisé Google Cloud Storage pour stocker les images à afficher sur le front-end.",
       "orms": "ORMs",
-      "prisma": "Prisma. J'ai utilisé cet ORM pour les services backend de mon projet d'entrepreneuriat.",
+      "prisma": "Prisma. J'ai utilisé cet ORM pour les services back-end de mon projet d'entrepreneuriat.",
       "mongoose": "Mongoose. Je l'ai utilisé pour des projets scolaires.",
       "containerization": "Conteneurisation",
       "docker": "Docker. Je l'utilise tous les jours pour le développement.",
@@ -82,6 +82,7 @@
   "experiences": {
     "moreInfo": "Plus d'informations...",
     "techUsed": "Technologies utilisées",
+    "technicalDetails": "Détails techniques",
     "formations": {
       "title": "Formations",
       "cesi": {
@@ -103,7 +104,7 @@
         "dates": "Janvier → Avril 2021",
         "detailedDates": "4 Janvier → 16 Avril 2021",
         "text": "Création d'une application orientée microservices, destinée à la gestion des missions et des clients de l'entreprise.",
-        "detailedText": "Durant ce stage qui a duré 4 mois, j'ai développé une application orientée microservices permettant la gestion des missions et des clients de l'entreprise. Les différents services de l'application étaient hébergés sur un cluster de quatre Raspberry Pi 4, chacun exécutant Kubernetes. Tous ces services étaient des APIs Web ASP.NET, utilisant des bases de données MongoDB. Pour le front-end, le client de bureau a été réalisé avec JavaFx, et l'application web du back-office avec Angular. La sécurité de cette application a été gérée avec des tokens JWT et un service d'authentification."
+        "detailedText": "Durant ce stage qui a duré 4 mois, j'ai développé une application orientée microservices permettant la gestion des missions et des clients de l'entreprise. Les différents services de l'application étaient hébergés sur un cluster de quatre Raspberry Pi 4, chacun exécutant Kubernetes. Tous ces services étaient des APIs Web ASP.NET, utilisant des bases de données MongoDB. Pour le front-end, le client de bureau a été réalisé avec JavaFx, et l'application web du back office avec Angular. La sécurité de cette application a été gérée avec des tokens JWT et un service d'authentification."
       },
       "cgr": {
         "title": "CGR Cinémas",
@@ -140,10 +141,19 @@
         "dates": "Avril → Mai 2021",
         "text": "J'ai développé mon site web personnel. Pour cela, j'ai d'abord utilisé Vue.js, puis j'ai migré vers Nuxt.js. Pour le look, j'ai utilisé TailwindCSS, ainsi qu'Adobe XD pour la création du design."
       },
-      "confidentialProject": {
-        "title": "Projet confidentiel",
-        "dates": "Mars 2021 → ...",
-        "text": "Je travaille actuellement sur un projet ambitieux avec 4 autres personnes."
+      "mankyan": {
+        "title": "Mankyan",
+        "dates": "Sept. 2021 → Présent",
+        "text": "Création d'une plateforme de lecture de mangas à la demande. Découvrez cette aventure en cliquant sur le lien ci-dessous !",
+        "clickMe": "Cliquez ici pour voir quelques captures d'écran du projet.",
+        "detailedText1": "Je travaille actuellement sur une plateforme de lecture de mangas à la demande. J'ai pu remplacer mon stage à l'étranger par ce projet entrepreneurial, notamment après avoir obtenu le statut national étudiant entrepreneur (SNEE).",
+        "detailedText2": "J'ai travaillé pendant 4 mois à l'Université de Bucarest sur ce projet de plateforme web avec les 4 membres de mon équipe. C'était une expérience très enrichissante, j'ai beaucoup progressé sur le plan technique, mais surtout j'ai amélioré mes soft skills (travail en équipe, communication, organisation) et j'ai réalisé leur importance pour obtenir les meilleures performances et travailler avec plaisir.",
+        "detailedText3": "Cliquez sur le logo du projet pour voir des captures d'écran !",
+        "technicalDetails1": "La plateforme est orientée microservices et se compose de 9 serveurs Apollo GraphQL écrits en TypeScript couplés à l'ORM Prisma, et testés avec Jest. Nous avons utilisé Apollo Federation qui est une architecture ouverte permettant de créer un supergraphe unifié qui combine plusieurs API GraphQL.",
+        "technicalDetails2": "Pour déployer, mettre à l'échelle et gérer nos services, nous avons utilisé Kubernetes, et plus particulièrement Google Kubernetes Engine (GKE). En effet, nous avons choisi la plateforme Cloud de Google pour notre application.",
+        "technicalDetails3": "Pour stocker les données, nous avons utilisé l'opérateur Postgres de Zalando afin de créer et gérer nos clusters PostgreSQL fonctionnant dans Kubernetes, ainsi que Google Cloud Storage pour les images et Google Artifact Registry pour nos artefacts.",
+        "technicalDetails4": "Pour la CI, nous avons utilisé un mélange de GitHub Actions et Google Cloud Build, et pour le CD, nous avons utilisé Argo CD.",
+        "technicalDetails5": "Pour le front-end, nous avons utilisé le framework Next.js couplé à Tailwind CSS, et Apollo Client pour la communication avec notre back-end. L'authentification sur le front-end est gérée par le framework NextAuth, tandis que sur le back-end nous avons créé un service d'authentification."
       }
     }
   },

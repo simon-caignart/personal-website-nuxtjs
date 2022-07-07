@@ -2,12 +2,23 @@
   <div
     name="aboutme"
     class="min-h-full overflow-hidden"
-    style="background: rgb(193,30,68); background: linear-gradient(36deg, rgba(193,30,68,1) 9%, rgba(226,75,32,1) 70%, rgba(247,174,0,1) 100%);"
+    style="
+      background: rgb(193, 30, 68);
+      background: linear-gradient(
+        36deg,
+        rgba(193, 30, 68, 1) 9%,
+        rgba(226, 75, 32, 1) 70%,
+        rgba(247, 174, 0, 1) 100%
+      );
+    "
   >
     <NavBar :nav-bar-title="title" class="absolute" />
 
     <aboutMe v-animate-about-illustration data-url="/me coding.png"></aboutMe>
-    <aboutMyHobbies v-animate-about-illustration data-url="/pullups.png"></aboutMyHobbies>
+    <aboutMyHobbies
+      v-animate-about-illustration
+      data-url="/pullups.png"
+    ></aboutMyHobbies>
 
     <!-- Floating Window Illustration -->
     <transition appear name="fadelater">
@@ -22,9 +33,9 @@
           <div
             class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-7/12 h-4/6 rounded-xl bg-white dark:bg-gray-800"
           >
-            <div class="aboutWindowDot" style="left:15px"></div>
-            <div class="aboutWindowDot" style="left:38px"></div>
-            <div class="aboutWindowDot" style="left:61px"></div>
+            <div class="aboutWindowDot" style="left: 15px"></div>
+            <div class="aboutWindowDot" style="left: 38px"></div>
+            <div class="aboutWindowDot" style="left: 61px"></div>
           </div>
         </div>
 
@@ -95,9 +106,12 @@ export default {
     return {
       title: this.metaTitle,
       htmlAttrs: {
-        ...i18nHead.htmlAttrs
+        ...i18nHead.htmlAttrs,
       },
-      link: [{ rel: "canonical", href: "https://simoncaignart.com/aboutme" },...i18nHead.link],
+      link: [
+        { rel: "canonical", href: "https://simoncaignart.com/aboutme" },
+        ...i18nHead.link,
+      ],
       meta: [
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
@@ -116,7 +130,7 @@ export default {
         { property: "og:url", content: "https://simoncaignart.com/aboutme" },
         {
           property: "og:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/social_card.png",
         },
         // Twitter
         {
@@ -141,12 +155,13 @@ export default {
         },
         {
           property: "twitter:image",
-          content: "https://simoncaignart.com/favicon.ico",
+          content: "https://simoncaignart.com/social_card.png",
         },
         {
           property: "twitter:image:alt",
           content: this.metaTitle,
-        },...i18nHead.meta
+        },
+        ...i18nHead.meta,
       ],
     };
   },

@@ -21,6 +21,10 @@
       <AutonomousCar />
     </el-dialog>
 
+    <el-dialog :visible.sync="dialogMankyanVisible">
+      <Mankyan />
+    </el-dialog>
+
     <!-- Formations and Interships section -->
     <section
       name="Formations and Interships section"
@@ -131,7 +135,7 @@
             </p>
             <span class="expCardImage">
               <img
-                class="max-h-24 svg-shadow-little transition duration-500 transform hover:scale-110"
+                class="max-h-24 transition duration-500 transform hover:scale-110"
                 src="../assets/eixa6_logo.svg"
                 alt="Eixa6's logo"
               />
@@ -169,7 +173,7 @@
             </p>
             <span class="expCardImage">
               <img
-                class="max-h-24 svg-shadow-little transition duration-500 transform hover:scale-110"
+                class="max-h-24 transition duration-500 transform hover:scale-110"
                 src="../assets/CGR_logo.png"
                 alt="CGR Cinémas's logo"
               />
@@ -243,7 +247,7 @@
             </p>
             <span class="expCardImage">
               <img
-                class="max-h-24 svg-shadow-little p-2 pb-0 xl:pb-0 xl:p-4 transition duration-500 transform hover:scale-110"
+                class="max-h-24 p-2 pb-0 xl:pb-0 xl:p-4 transition duration-500 transform hover:scale-110"
                 src="../assets/laravel_logo.svg"
                 alt="Laravel's logo"
               />
@@ -263,6 +267,31 @@
           {{ $t("experiences.personalProjects.title") }}
         </h1>
 
+        <!-- Mankyan -->
+        <div class="expCardProjects" data-aos="zoom-in-up">
+          <h2 class="expCardTitle">
+            {{ $t("experiences.personalProjects.mankyan.title") }}
+          </h2>
+          <h3 class="expCardDates">
+            {{ $t("experiences.personalProjects.mankyan.dates") }}
+          </h3>
+          <div class="expCardInlineRow">
+            <p class="pt-4 w-full dark:text-gray-300 pb-4">
+              {{ $t("experiences.personalProjects.mankyan.text") }}
+            </p>
+            <span class="expCardImage">
+              <img
+                class="inline object-fill p-3 pb-0 xl:pb-5 xl:p-0 transition duration-500 transform hover:scale-110"
+                src="../assets/mankyan_logo.svg"
+                alt="Mankyan Logo"
+              />
+            </span>
+          </div>
+          <a class="expCardLink" @click="dialogMankyanVisible = true">{{
+            $t("experiences.moreInfo")
+          }}</a>
+        </div>
+
         <!-- Personal Website -->
         <div class="expCardProjects" data-aos="zoom-in-up">
           <h2 class="expCardTitle">
@@ -277,31 +306,9 @@
             </p>
             <span class="expCardImage">
               <img
-                class="inline object-fill p-2 pb-0 xl:pb-0 xl:p-3 svg-shadow transition duration-500 transform hover:scale-110"
+                class="inline object-fill p-2 pb-0 xl:pb-5 xl:p-3 xl:pr-0 xl:pl-5 transition duration-500 transform hover:scale-110"
                 src="../assets/nuxt_logo.svg"
                 alt="Nuxt.js logo"
-              />
-            </span>
-          </div>
-        </div>
-
-        <div class="expCardProjects" data-aos="zoom-in-up">
-          <h2 class="expCardTitle">
-            {{ $t("experiences.personalProjects.confidentialProject.title") }}
-          </h2>
-          <h3 class="expCardDates">
-            {{ $t("experiences.personalProjects.confidentialProject.dates") }}
-          </h3>
-          <div class="expCardInlineRow">
-            <p class="expCardParagraph">
-              {{ $t("experiences.personalProjects.confidentialProject.text") }}
-            </p>
-            <span class="expCardImage">
-              <img
-                class="inline object-fill p-3 pb-0 xl:pb-5 xl:p-5 svg-shadow transition duration-500 transform hover:scale-110"
-                src="../assets/lock_icon.svg"
-                alt="Lock Icon"
-                name="Icon made by Pixel perfect on flaticon"
               />
             </span>
           </div>
@@ -315,6 +322,7 @@
 import NavBar from "../components/NavBar.vue";
 import Eixa6 from "../components/experiences/eixa6";
 import CGRCINEMAS from "../components/experiences/cgr-cinemas";
+import Mankyan from "../components/experiences/mankyan";
 import StudentAssociationWebsite from "../components/experiences/student-association-website";
 import AutonomousCar from "../components/experiences/autonomous-car.vue";
 import SectionSeparator from "../components/sectionSeparator";
@@ -325,8 +333,9 @@ export default {
     CGRCINEMAS,
     Eixa6,
     AutonomousCar,
+    Mankyan,
     StudentAssociationWebsite,
-    SectionSeparator
+    SectionSeparator,
   },
   data() {
     return {
@@ -336,10 +345,11 @@ export default {
       dialogCgrVisible: false,
       dialogStudentAssociationVisible: false,
       dialogAutonomousCarVisible: false,
+      dialogMankyanVisible: false,
 
       metaTitle: "Simon Caignart | Experiences",
       description:
-        "Discover the different experiences I had until today, my internships, my studies, my projects."
+        "Discover the different experiences I had until today, my internships, my studies, my projects.",
     };
   },
   head() {
@@ -347,18 +357,18 @@ export default {
     return {
       title: this.metaTitle,
       htmlAttrs: {
-        ...i18nHead.htmlAttrs
+        ...i18nHead.htmlAttrs,
       },
       link: [
         { rel: "canonical", href: "https://simoncaignart.com/experiences" },
-        ...i18nHead.link
+        ...i18nHead.link,
       ],
       meta: [
         { charset: "robots", content: "utf-8" },
         { name: "robots", content: "index,follow" },
         {
           name: "author",
-          content: "Simon Caignart"
+          content: "Simon Caignart",
         },
         { name: "description", content: this.description },
         // OpenGraph
@@ -366,48 +376,48 @@ export default {
         { property: "og:locale", content: "en_US" },
         {
           property: "og:description",
-          content: this.description
+          content: this.description,
         },
         {
           property: "og:url",
-          content: "https://simoncaignart.com/experiences"
+          content: "https://simoncaignart.com/experiences",
         },
         {
           property: "og:image",
-          content: "https://simoncaignart.com/favicon.ico"
+          content: "https://simoncaignart.com/social_card.png",
         },
         // Twitter
         {
           property: "twitter:card",
-          content: "summary"
+          content: "summary",
         },
         {
           property: "twitter:site",
-          content: "@SimonCaignart"
+          content: "@SimonCaignart",
         },
         {
           property: "twitter:creator",
-          content: "@SimonCaignart"
+          content: "@SimonCaignart",
         },
         {
           property: "twitter:title",
-          content: this.metaTitle
+          content: this.metaTitle,
         },
         {
           property: "twitter:description",
-          content: this.description
+          content: this.description,
         },
         {
           property: "twitter:image",
-          content: "https://simoncaignart.com/favicon.ico"
+          content: "https://simoncaignart.com/social_card.png",
         },
         {
           property: "twitter:image:alt",
-          content: this.metaTitle
+          content: this.metaTitle,
         },
-        ...i18nHead.meta
-      ]
+        ...i18nHead.meta,
+      ],
     };
-  }
+  },
 };
 </script>

@@ -59,19 +59,19 @@
 <script>
 import LocaleSwitcher from "../components/LocalSwitcher.vue";
 import ThemeSwitcher from "../components/ThemeSwitcher.vue";
-import loader from '../components/loader.vue';
+import loader from "../components/loader.vue";
 
 export default {
   components: {
     LocaleSwitcher,
     ThemeSwitcher,
-    loader
+    loader,
   },
   data() {
     return {
       description:
         "Hi, I'm Simon Caignart, a software engineer student, I like to code things from scratch, bringing ideas to life.",
-      metaTitle: "Simon Caignart | Software Engineer Student"
+      metaTitle: "Simon Caignart | Software Engineer Student",
     };
   },
   head() {
@@ -79,11 +79,11 @@ export default {
     return {
       title: this.metaTitle,
       htmlAttrs: {
-        ...i18nHead.htmlAttrs
+        ...i18nHead.htmlAttrs,
       },
       link: [
         { rel: "canonical", href: "https://simoncaignart.com/" },
-        ...i18nHead.link
+        ...i18nHead.link,
       ],
       meta: [
         { charset: "utf-8" },
@@ -91,56 +91,56 @@ export default {
         { name: "robots", content: "index,follow" },
         {
           name: "author",
-          content: "Simon Caignart"
+          content: "Simon Caignart",
         },
         {
           name: "description",
-          content: this.description
+          content: this.description,
         },
         // OpenGraph
         { property: "og:title", content: this.metaTitle },
         { property: "og:locale", content: "en_US" },
         {
           property: "og:description",
-          content: this.description
+          content: this.description,
         },
         { property: "og:url", content: "https://simoncaignart.com" },
         {
           property: "og:image",
-          content: "https://simoncaignart.com/favicon.ico"
+          content: "https://simoncaignart.com/social_card.png",
         },
         // Twitter
         {
           property: "twitter:card",
-          content: "summary"
+          content: "summary",
         },
         {
           property: "twitter:site",
-          content: "@SimonCaignart"
+          content: "@SimonCaignart",
         },
         {
           property: "twitter:creator",
-          content: "@SimonCaignart"
+          content: "@SimonCaignart",
         },
         {
           property: "twitter:title",
-          content: this.metaTitle
+          content: this.metaTitle,
         },
         {
           property: "twitter:description",
-          content: this.description
+          content: this.description,
         },
         {
           property: "twitter:image",
-          content: "https://simoncaignart.com/favicon.ico"
+          content: "https://simoncaignart.com/social_card.png",
         },
         {
           property: "twitter:image:alt",
-          content: this.metaTitle
+          content: this.metaTitle,
         },
-        ...i18nHead.meta
-      ]
+        ...i18nHead.meta,
+      ],
     };
-  }
+  },
 };
 </script>
