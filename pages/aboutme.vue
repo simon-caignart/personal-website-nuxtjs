@@ -1,17 +1,5 @@
 <template>
-  <div
-    name="aboutme"
-    class="min-h-full overflow-hidden"
-    style="
-      background: rgb(193, 30, 68);
-      background: linear-gradient(
-        36deg,
-        rgba(193, 30, 68, 1) 9%,
-        rgba(226, 75, 32, 1) 70%,
-        rgba(247, 174, 0, 1) 100%
-      );
-    "
-  >
+  <div name="aboutme" class="min-h-full overflow-hidden aboutme-background">
     <NavBar :nav-bar-title="title" class="absolute" />
 
     <aboutMe v-animate-about-illustration data-url="/me coding.png"></aboutMe>
@@ -167,3 +155,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.aboutme-background {
+  background: linear-gradient(
+    36deg,
+    rgba(193, 30, 68, 1) 9%,
+    rgba(226, 75, 32, 1) 70%,
+    rgba(247, 174, 0, 1) 100%
+  ) !important;
+}
+</style>
