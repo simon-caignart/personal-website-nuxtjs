@@ -54,8 +54,8 @@
       "ts": "TypeScript. I now use TypeScript as often as possible instead of JS, for front end and back end development.",
       "react": "React. I used it for the front ends of my entrepreneurship project.",
       "nextjs": "Next.js. Used this framework on top of React for the front ends of my entrepreneuship project.",
-      "vuejs": "Vue JS. Originally constructed this website using this Javascript Framework.",
-      "nuxtjs": "Nuxt JS. Migrated the first version of this website to Nuxt JS.",
+      "vuejs": "Vue.js. Originally constructed this website using this Javascript Framework.",
+      "nuxtjs": "Nuxt.js. Migrated the first version of this website to Nuxt.js.",
       "angular": "Angular. Created a back office website for a microservices oriented application.",
       "laravel": "Laravel. Used this framework during a school project for the development of a website with user managment and an online store.",
       "tailwind": "Tailwind CSS. I used this CSS framework for the development of the website you are actually seeing, as well as in other projects.",
@@ -64,7 +64,7 @@
       "intellij": "Intellij. My go to when dealing with Java and JavaFx.",
       "githubActions": "GitHub Actions. I use this tool for the continuous integration of all my recent projects.",
       "googleCloudBuild": "Google Cloud Build. I used this google cloud service for the continuous delivery of my entrepreneurship project.",
-      "argocd": "ArgoCD. I used it for the continuous deployment of the microservices of my entrepreneurship project in a Kubernetes environment.",
+      "argocd": "Argo CD. I used it for the continuous deployment of the microservices of my entrepreneurship project in a Kubernetes environment.",
       "azure": "Azure Pipelines. Used it for ASP.NET services and for a WPF application.",
       "jenkins": "Jenkins. I used Jenkins for a Java application.",
       "teamcity": "TeamCity. Used it for the CI of a JavaFx and an Angular application.",
@@ -139,7 +139,7 @@
       "personalWebsite": {
         "title": "Personal website",
         "dates": "Avril → May 2021",
-        "text": "Developed my portfolio website. I first used Vue.js, then migrated my project to Nuxt.js. For the look, I used TailwindCSS, as well as Adobe XD for the design creation."
+        "text": "Developed my portfolio website. I first used Vue.js, then migrated my project to Nuxt.js. For the look, I used Tailwind CSS, as well as Adobe XD for the design creation."
       },
       "mankyan": {
         "title": "Mankyan",

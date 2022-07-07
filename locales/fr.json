@@ -54,8 +54,8 @@
       "ts": "TypeScript. J'utilise maintenant TypeScript aussi souvent que possible au lieu de JavaSript, pour le développement du front-end et du back-end.",
       "react": "React. Je l'ai utilisé pour les front-ends de mon projet d'entrepreneuriat.",
       "nextjs": "Next.js. J'ai utilisé ce framework au dessus de React pour les front-ends de mon projet d'entreprenariat.",
-      "vuejs": "Vue JS. J'ai initialement développé ce site web en utilisant ce framework Javascript.",
-      "nuxtjs": "Nuxt JS. J'ai migré la première version de ce site web vers Nuxt JS.",
+      "vuejs": "Vue.js. J'ai initialement développé ce site web en utilisant ce framework Javascript.",
+      "nuxtjs": "Nuxt.js. J'ai migré la première version de ce site web vers Nuxt.js.",
       "angular": "Angular. J'ai créé un site web pour le back office d'une application orientée microservices.",
       "laravel": "Laravel. J'ai utilisé ce framework lors d'un projet scolaire consistant en la création d'un site web avec gestion des utilisateurs et d'une boutique en ligne.",
       "tailwind": "Tailwind CSS. J'ai utilisé ce framework CSS pour le développement du site web que vous voyez actuellement, ainsi que dans d'autres projets.",
@@ -139,7 +139,7 @@
       "personalWebsite": {
         "title": "Site web personnel",
         "dates": "Avril → Mai 2021",
-        "text": "J'ai développé mon site web personnel. Pour cela, j'ai d'abord utilisé Vue.js, puis j'ai migré vers Nuxt.js. Pour le look, j'ai utilisé TailwindCSS, ainsi qu'Adobe XD pour la création du design."
+        "text": "J'ai développé mon site web personnel. Pour cela, j'ai d'abord utilisé Vue.js, puis j'ai migré vers Nuxt.js. Pour le look, j'ai utilisé Tailwind CSS, ainsi qu'Adobe XD pour la création du design."
       },
       "mankyan": {
         "title": "Mankyan",
