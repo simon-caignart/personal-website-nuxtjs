@@ -1,7 +1,7 @@
 import Vue from "vue";
 
 Vue.directive("animate-about-illustration", {
-  inserted: el => {
+  inserted: (el) => {
     function loadImage() {
       const meImg = document.getElementById("meImg");
       const hobbiesImg = document.getElementById("hobbiesImg");
@@ -32,7 +32,7 @@ Vue.directive("animate-about-illustration", {
           !meImg.classList.contains("animate-fadeOutFast") &&
           !hobbiesImg.classList.contains("animate-fadeOutFast")
         ) {
-          if (el.dataset.url == "/simon caignart.png") {
+          if (el.dataset.url == "/me coding.png") {
             hobbiesImg.classList.add("animate-fadeOutFast");
           } else if (el.dataset.url == "/pullups.png") {
             meImg.classList.add("animate-fadeOutFast");
@@ -42,7 +42,7 @@ Vue.directive("animate-about-illustration", {
     }
 
     function handleIntersect(entries, observer) {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           return;
         } else {
@@ -54,7 +54,7 @@ Vue.directive("animate-about-illustration", {
     function createObserver() {
       const options = {
         root: null,
-        threshold: "0.8"
+        threshold: "0.8",
       };
 
       const observer = new IntersectionObserver(handleIntersect, options);
@@ -67,5 +67,5 @@ Vue.directive("animate-about-illustration", {
     } else {
       createObserver();
     }
-  }
+  },
 });
