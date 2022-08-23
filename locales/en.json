@@ -24,7 +24,7 @@
     "frameworks": {
       "title": "Frameworks and Libraries",
       "text1": "You will find in the following block the frameworks and libraries that I mainly use.",
-      "text2": "I love working with React and Tailwind CSS for front end development. For the back end, I like to use GraphQL with the Apollo platform."
+      "text2": "I love working with React and Tailwind CSS for frontend development. For the backend, I like to use GraphQL with the Apollo platform."
     },
     "ci/cd": {
       "title": "CI/CD",
@@ -47,13 +47,13 @@
       "arduino": "Arduino. Used it a lot at school for two projects.",
       "swift": "Swift. Actually discovering it while developing an IOS app.",
       "graphql": "GraphQL. Used this query language for all the APIs of my entrepreneurship project.",
-      "apollo": "Apollo. Used this platform to create the GraphQL servers of all the microservices of my entrepreneurship project. I also used Apollo Federation to have a single entry point and Apollo Client to query the back end from the front end apps.",
+      "apollo": "Apollo. Used this platform to create the GraphQL servers of all the microservices of my entrepreneurship project. I also used Apollo Federation to have a single entry point and Apollo Client to query the backend from the frontend apps.",
       "javafx": "JavaFx. Used it for a complete project during an internship of four months.",
       "wpf": "WPF. Used WPF during a school project to create a file backup manager.",
       "js": "JavaScript. Used it in a lot of web projects.",
-      "ts": "TypeScript. I now use TypeScript as often as possible instead of JS, for front end and back end development.",
-      "react": "React. I used it for the front ends of my entrepreneurship project.",
-      "nextjs": "Next.js. Used this framework on top of React for the front ends of my entrepreneuship project.",
+      "ts": "TypeScript. I now use TypeScript as often as possible instead of JS, for frontend and backend development.",
+      "react": "React. I used it for the frontends of my entrepreneurship project.",
+      "nextjs": "Next.js. Used this framework on top of React for the frontends of my entrepreneuship project.",
       "vuejs": "Vue.js. Originally constructed this website using this Javascript Framework.",
       "nuxtjs": "Nuxt.js. Migrated the first version of this website to Nuxt.js.",
       "angular": "Angular. Created a back office website for a microservices oriented application.",
@@ -69,9 +69,9 @@
       "jenkins": "Jenkins. I used Jenkins for a Java application.",
       "teamcity": "TeamCity. Used it for the CI of a JavaFx and an Angular application.",
       "cloudPlatforms": "Cloud Platforms",
-      "googleCloudPlatform": "Google Cloud Platform. I used the google cloud platform to host a microservices oriented application (10 services) with Google Kubernetes Engine. To store the docker images of these services, I used Google Artifact Registry. I also used the Google Cloud Build CI/CD platform. Finally, I used Google Cloud Storage to store images to display on the front end",
+      "googleCloudPlatform": "Google Cloud Platform. I used the google cloud platform to host a microservices oriented application (10 services) with Google Kubernetes Engine. To store the docker images of these services, I used Google Artifact Registry. I also used the Google Cloud Build CI/CD platform. Finally, I used Google Cloud Storage to store images to display on the frontend",
       "orms": "ORMs",
-      "prisma": "Prisma. I used this ORM for the back end services of my entrepreneurship project.",
+      "prisma": "Prisma. I used this ORM for the backend services of my entrepreneurship project.",
       "mongoose": "Mongoose. I used it in school projects.",
       "containerization": "Containerization",
       "docker": "Docker. Use it everyday for development in a lot of different projects.",
@@ -104,7 +104,7 @@
         "dates": "January → April 2021",
         "detailedDates": "January 4 → April 16 2021",
         "text": "Constructed a microservices oriented application, made for the management of the missions and clients of the company.",
-        "detailedText": "During this internship that lasted 4 month, I constructed a microservice-oriented application made for the management of the missions and clients of the company. The different services of the application were hosted on a cluster of four raspberry pi 4, each one running kubernetes. All those services were ASP.NET Web Apis, using mongodb databases. For the front end, the desktop client was made with JavaFx, and the back Office web app with Angular. The security of this application was managed with JWT Tokens and an authentication service."
+        "detailedText": "During this internship that lasted 4 month, I constructed a microservice-oriented application made for the management of the missions and clients of the company. The different services of the application were hosted on a cluster of four raspberry pi 4, each one running kubernetes. All those services were ASP.NET Web Apis, using mongodb databases. For the frontend, the desktop client was made with JavaFx, and the back Office web app with Angular. The security of this application was managed with JWT Tokens and an authentication service."
       },
       "cgr": {
         "title": "CGR Cinémas",
@@ -143,17 +143,17 @@
       },
       "mankyan": {
         "title": "Mankyan",
-        "dates": "Sept. 2021 → Present",
-        "text": "Creating an on-demand manga reading platform. Discover this adventure by clicking on the link below!",
+        "dates": "May 2021 → July 2022",
+        "text": "Worked on an on-demand manga reading platform. Discover this adventure by clicking on the link below!",
         "clickMe": "Click here to see some screenshots of the project",
-        "detailedText1": "I am currently working on an on-demand manga reading platform. I was able to replace my internship abroad by this entrepreneurial project, especially after obtaining the national status of student entrepreneur (SNEE).",
+        "detailedText1": "I worked on the creation of a on-demand manga reading platform called Mankyan, from all the work involved in creating the startup to the complete conception and creation of the backend, backoffice and frontend of the app. I was able to replace my internship abroad by this entrepreneurial project, especially after obtaining the national status of student entrepreneur (SNEE).",
         "detailedText2": "I worked for 4 months at the University of Bucharest on this web platform project with the 4 members of my team. It was a very enriching experience, I progressed a lot on the technical level, but above all I improved my soft skills (team work, communication, organization) and I realized their importance to obtain the best performances and work with pleasure.",
         "detailedText3": "Click on the project logo for screenshots of our back office, the app design, our CI/CD workflow and more!",
         "technicalDetails1": "The platform is microservices oriented and is composed of 9 GraphQL Apollo Servers written in TypeScript coupled with the Prisma ORM, and tested with Jest. We used Apollo Federation which is an open architecture that helps create a unified supergraph that combines multiple GraphQL APIs.",
         "technicalDetails2": "To deploy, scale, and manage our services, we used Kubernetes, and more specifically Google Kubernetes Engine (GKE). Indeed, we choose Google Cloud Platform for our application.",
         "technicalDetails3": "To store data, we used Zalando's Postgres operator to create and manage our PostgreSQL clusters running in Kubernetes, as well as Google Cloud Storage for images, and Google Artifact Registry for our artifacts.",
         "technicalDetails4": "For CI, we used a mix of GitHub Actions and Google Cloud Build, and for CD, we used Argo CD.",
-        "technicalDetails5": "Now for the front end, we used the Next.js framework coupled with Tailwind CSS, and Apollo Client for the communication with our back end. Authentication on the front end is handled by the NextAuth framework, while on the back end we created an authentication service."
+        "technicalDetails5": "Now for the frontend, we used the Next.js framework coupled with Tailwind CSS, and Apollo Client for the communication with our backend. Authentication on the frontend is handled by the NextAuth framework, while on the backend we created an authentication service."
       }
     }
   },

@@ -3,7 +3,7 @@
     name="skills"
     class="bg-gradient-to-r from-orange to-yellow-400 min-h-full overflow-hidden"
   >
-    <NavBar :nav-bar-title="title" />
+    <NavBar :nav-bar-title="`home.skills`" />
     <langOrmRow></langOrmRow>
     <frameworkContainerRow></frameworkContainerRow>
     <cicdCloudRow></cicdCloudRow>

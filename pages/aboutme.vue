@@ -1,6 +1,6 @@
 <template>
   <div name="aboutme" class="min-h-full overflow-hidden aboutme-background">
-    <NavBar :nav-bar-title="title" class="absolute" />
+    <NavBar :nav-bar-title="`home.about`" class="absolute" />
 
     <aboutMe v-animate-about-illustration data-url="/me coding.png"></aboutMe>
     <aboutMyHobbies
