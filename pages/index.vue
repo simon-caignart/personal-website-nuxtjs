@@ -4,8 +4,8 @@
       <loader slot="placeholder"></loader>
       <transition appear name="fadelater">
         <div id="switchers" class="absolute top-3 right-3 flex z-10">
-          <LocaleSwitcher />
-          <ThemeSwitcher />
+          <LocaleSwitcher :invertDarkThemeColors="true" />
+          <ThemeSwitcher :invertDarkThemeColors="true" />
         </div>
       </transition>
 

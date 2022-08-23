@@ -3,7 +3,7 @@
     name="experiences"
     class="bg-gradient-to-r from-blue-500 via-blue-400 to-green-300 min-h-full overflow-hidden m-auto max-w-screen-3xl"
   >
-    <NavBar :nav-bar-title="title" />
+    <NavBar :nav-bar-title="`home.experiences`" />
 
     <el-dialog :visible.sync="dialogEixaVisible">
       <eixa6 />
