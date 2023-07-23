@@ -23,7 +23,7 @@
       <div class="text-center mt-3">
         <!-- Linkedin Icon -->
         <a
-          href="https://fr.linkedin.com/in/simon-caignart-49768a189"
+          href="https://www.linkedin.com/in/simoncaignart/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -51,7 +51,7 @@
 
         <!-- GitHub Icon -->
         <a
-          href="https://github.com/SimonCaignart"
+          href="https://github.com/simon-caignart"
           target="_blank"
           rel="noopener noreferrer"
         >
