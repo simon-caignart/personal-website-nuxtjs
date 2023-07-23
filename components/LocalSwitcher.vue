@@ -95,7 +95,7 @@ export default {
       isOpen: false,
     };
   },
-  created() {
+  mounted() {
     const handleEscape = (e) => {
       if (e.key === "Esc" || e.key === "Escape") {
         this.isOpen = false;
